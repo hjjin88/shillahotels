@@ -5,7 +5,7 @@
     max-width: 100%;
 }
 .contain.new-pc{padding: 0;}
-.new_con{width: 100vw;}    
+/* .new_con{width: 100%;}     */
 .new_con img{width: 100%;}
 .map_tab .tab_wrap{
     position: relative;
