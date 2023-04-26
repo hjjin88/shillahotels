@@ -106,11 +106,8 @@
     object-fit: cover;
   }
 .intro_swiper .swiper-pagination{
-    padding: 10px 0;
     font-size: 15px;
-    font-weight: 600;
     color: #fff;
-    bottom: 0;
 }
 .intro_swiper .swiper-button-prev{
     top: 50%;
