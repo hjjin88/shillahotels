@@ -557,7 +557,6 @@
         </ul>
       </div>
     </div></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         
         <div class="contain new-pc">
             <!-- test css -->
@@ -642,8 +641,8 @@
                                             </div>
                                             <div class="swiper-button-next"></div>
                                             <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
                                         </div>
-                                        <div class="swiper-pagination"></div>
                                     </div>
                                 <img src="./images/ko/hub/sub/mono_intro_02.jpg" alt="신라 호텔의 사진">
                             </div>
@@ -697,7 +696,6 @@
 
                         <!-- Swiper JS -->
                         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-                        <script type="text/javascript" src="./test.js"></script>
                         <script>
                             var swiper = new Swiper(".mySwiper", {
                                 slidesPerView : 1,
@@ -711,6 +709,28 @@
                                 nextEl: ".swiper-button-next",
                                 prevEl: ".swiper-button-prev",
                                 },
+                            });
+                        </script>
+                        <script>
+                            // map
+                            $(function() {
+                                $('.tab_wrap ul.tab li').click(function() {
+                                    var activeTab = $(this).attr('data-tab');
+                                    $('.tab_wrap ul.tab li').removeClass('on');
+                                    $('.map-tab').removeClass('on');
+                                    $(this).addClass('on');
+                                    $('#' + activeTab).addClass('on');
+                                })
+                            });
+                            // swiper
+                            $(function() {
+                                $('.intro_wrap ul.intro li').click(function() {
+                                    var activeTab = $(this).attr('data-tab');
+                                    $('.intro_wrap ul.intro li').removeClass('on');
+                                    $('.intro-tab').removeClass('on');
+                                    $(this).addClass('on');
+                                    $('#' + activeTab).addClass('on');
+                                })
                             });
                         </script>
                     </div>
