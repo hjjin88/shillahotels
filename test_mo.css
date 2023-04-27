@@ -136,8 +136,24 @@
 
 
 /* 모바일 */
-@media all and (orientation: portrait) {
 .new-mo {text-align: center;}
+/* .new-mo .tit{
+padding: 100px 0 38px;
+font-size: 20px;
+font-weight: bold;
+line-height: 15px;
+color: rgb(34, 34, 34);
+letter-spacing:0.4px;
+word-spacing: -0.6px;
+}
+
+.new-mo .txt{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing:-0.6px;
+    word-spacing: 0.6px;
+    color: rgb(102, 102, 102);
+} */
 .txt_box{padding-bottom:60px;}
 .txt_box dt{
     padding: 100px 0 38px;
@@ -166,11 +182,7 @@
 padding-bottom: 0;
 }
 
-.m5p{margin: 0 5% !important;}
-.p0{margin: 0 30px !important;}
-.pb20{padding-bottom: 20px !important;}
-.pb25{padding-bottom: 25px !important;}
-
+.p30{margin: 0 30px;}
 .bar_con::before{
     content: '';
     background: url(./images/ko/hub/sub/bar.jpg) center no-repeat;;
@@ -186,15 +198,9 @@ padding-bottom: 0;
     padding-top: 50px;
 }
 .intro_swiper.mo .swiper-con{
-    width: unset;
+    width: 580px;
     height: 324px;
-    padding: 0 30px;
-    /*  확인 필요 */
-    object-fit: contain;
-}
-.intro_swiper.mo .swiper-slide img{
-    /*  확인 필요 */
-    object-fit: cover;
+
 }
 .intro_swiper.mo .intro_wrap .intro{
     justify-content: space-around;
@@ -224,19 +230,4 @@ line-height: 1.1;
     margin-top: 0;
     background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;
     background-size: 30px 55px;
-}
-.bar_con.beige{
-    padding-top: 0;
-    padding-bottom: 100px;
-    background: rgb(241, 234, 215);
-}
-.bar_con.beige .txt_box {
-    padding-bottom: 42px;
-}
-.lh25{
-    line-height: 25.3px !important;
-}
-.new-mo .confirmBox{
-    padding: 10px 15px 140px;
-}
 }

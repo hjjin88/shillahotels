@@ -711,29 +711,29 @@
                                 },
                             });
                         </script>
+                        <script>
+                            // map
+                            $(function() {
+                                $('.tab_wrap ul.tab li').click(function() {
+                                    var activeTab = $(this).attr('data-tab');
+                                    $('.tab_wrap ul.tab li').removeClass('on');
+                                    $('.map-tab').removeClass('on');
+                                    $(this).addClass('on');
+                                    $('#' + activeTab).addClass('on');
+                                })
+                            });
+                            // swiper
+                            $(function() {
+                                $('.intro_wrap ul.intro li').click(function() {
+                                    var activeTab = $(this).attr('data-tab');
+                                    $('.intro_wrap ul.intro li').removeClass('on');
+                                    $('.intro-tab').removeClass('on');
+                                    $(this).addClass('on');
+                                    $('#' + activeTab).addClass('on');
+                                })
+                            });
+                        </script>
                     </div>
-                    <script>
-                        // map
-                        $(function() {
-                            $('.tab_wrap ul.tab li').click(function() {
-                                var activeTab = $(this).attr('data-tab');
-                                $('.tab_wrap ul.tab li').removeClass('on');
-                                $('.map-tab').removeClass('on');
-                                $(this).addClass('on');
-                                $('#' + activeTab).addClass('on');
-                            })
-                        });
-                        // swiper
-                        $(function() {
-                            $('.intro_wrap ul.intro li').click(function() {
-                                var activeTab = $(this).attr('data-tab');
-                                $('.intro_wrap ul.intro li').removeClass('on');
-                                $('.intro-tab').removeClass('on');
-                                $(this).addClass('on');
-                                $('#' + activeTab).addClass('on');
-                            })
-                        });
-                    </script>
                 </div>
                 <img src="./images/ko/hub/sub/3.jpg" alt="신라 호텔의 사진">
                 <img src="./images/ko/hub/sub/4.jpg" alt="신라 호텔의 사진">
