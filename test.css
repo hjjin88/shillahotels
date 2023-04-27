@@ -106,6 +106,11 @@
 .intro_swiper .swiper-pagination{
     font-size: 15px;
     color: #fff;
+
+
+    bottom: 20px;
+    background: red;
+    height: 20px;
 }
 .intro_swiper .swiper-button-prev{
     top: 50%;
