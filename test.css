@@ -1,10 +1,10 @@
+/* .main_img{height: 380px;} */
 .new-mo{} 
 .new-mo img{
     margin: 0 auto;
     width: 100%;
 }
 .contain.new-pc{padding: 0;}
-/* .new_con{width: 100%;}     */
 .new_con img{width: 100%;}
 .map_tab .tab_wrap{
     position: relative;
@@ -83,36 +83,21 @@
     border-bottom: 4px solid #83766e;
 }
 
+.intro_swiper .swiper-container{
+    height: fit-content;
+    margin: 0 5%;
+}
 .intro_swiper .swiper-con{
     overflow: hidden;
     position: relative;
     width: 1200px;
     margin: 0 auto;
 }
-.intro_swiper .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.intro_swiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 .intro_swiper .swiper-pagination{
     font-size: 15px;
     color: #fff;
-
-
-    bottom: 20px;
-    background: red;
-    height: 20px;
 }
-/* .intro_swiper .swiper-button-prev{
+.intro_swiper .swiper-button-prev{
     top: 50%;
     left: 0px;
     transform: translateY(-50%);
@@ -137,7 +122,7 @@
     background: url(https://www.shilla.net/images/ko/jeju/main/slideNext.png) no-repeat 0px 0px;
     text-indent: -9999%;
     overflow: hidden;
-} */
+}
 
 
 /* 모바일 */
@@ -145,7 +130,7 @@
 .new-mo {text-align: center;}
 .txt_box{padding-bottom:60px;}
 .txt_box dt{
-    padding: 100px 0 38px;
+    padding: 100px 0 30px;
     font-size: 20px;
     font-weight: bold;
     line-height: 15px;
@@ -154,7 +139,7 @@
     word-spacing: -0.6px;
 }
 .txt_box dd.desc{
-    padding: 15px 0 22px;
+    padding: 20px 0 30px;
     color: rgb(153, 153, 153);
 }
 .txt_box dd{
@@ -164,9 +149,9 @@
     word-spacing: 0.6px;
     color: rgb(102, 102, 102);
 }
-.intro-tab .txt_box {
+/* .intro-tab .txt_box {
     padding-bottom:50px;
-}
+} */
 .intro-tab .txt_box dt{
 padding-bottom: 0;
 }
@@ -175,6 +160,8 @@ padding-bottom: 0;
 .p0{margin: 0 30px !important;}
 .pb20{padding-bottom: 20px !important;}
 .pb25{padding-bottom: 25px !important;}
+.pb40{padding-bottom: 40px !important;}
+
 
 .bar_con::before{
     content: '';
@@ -194,13 +181,8 @@ padding-bottom: 0;
     width: unset;
     height: 324px;
     padding: 0 30px;
-    /*  확인 필요 */
-    object-fit: contain;
 }
-.intro_swiper.mo .swiper-slide img{
-    /*  확인 필요 */
-    object-fit: cover;
-}
+
 .intro_swiper.mo .intro_wrap .intro{
     justify-content: space-around;
     border: 0;
@@ -247,6 +229,9 @@ line-height: 1.1;
     line-height: 25.3px !important;
 }
 .new-mo .confirmBox{
-    padding: 10px 15px 140px;
+    padding: 20px 15px 140px;
+}
+.new-mo .confirmBox input{
+    height: 50px;
 }
 }
