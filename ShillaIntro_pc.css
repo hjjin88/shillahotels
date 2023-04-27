@@ -1,0 +1,47 @@
+.contain.new-pc{padding: 0;}
+.new-con img{width: 100%;}
+.map_tab .tab_wrap{position: relative;}
+.map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;margin: 39px auto;padding: 0px;background: #f7f7f7;}
+.map_tab .tab li a {display: flex;align-items: center;justify-content: center;text-decoration: none;padding: 10px 25px 10px 0;font-weight: 600;color: #454545;}
+.map_tab .tab li a::before{content: '';width: 1px;height: 14px;margin-right: 25px;background: #cbcbcb;}
+.map_tab .tab li:first-child a::before{display: none;}
+.map_tab .map-tab, .intro-tab{display: none;}
+.map_tab ul.tab li.on a{color: #9d8c78;}
+.map_tab .map-tab.on, .intro-tab.on{display: block;}
+.map_tab .map-tab img, .intro-tab img{width: 100%;}
+.intro_wrap .intro{overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;margin: 0 auto;padding: 0px;background: #fff;border-bottom: 1px solid #e5e5e5;}
+.intro_wrap .intro li a {text-decoration: none;display: flex;align-items: center;justify-content: center;width: 216px;padding: 20px 0;color: #999;font-weight: 600;}
+.intro_wrap .intro li.on a {color: #9d8c78;border-bottom: 4px solid #83766e;}
+.intro_swiper .swiper-container{height: fit-content;}
+.intro_swiper .swiper-con{overflow: hidden;position: relative;width: 1200px;margin: 0 auto;}
+.intro_swiper .swiper-pagination{font-size: 15px;color: #fff;}
+.intro_swiper .swiper-button-prev{top: 50%;left: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slidePrev.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
+.intro_swiper .swiper-button-next{top: 50%;right: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slideNext.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
+.new-con .btnSet{display: flex;
+    justify-content: center;
+    height: unset;
+    margin-bottom: 150px;
+}
+
+.new-con .btnSet li{
+    width:unset;
+    margin-right: 10px;
+    /* position: relative; */
+}
+/* .tab li:nth-child(1).on{
+    background: url(./images/ko/hub/sub/new_pc/t_on.jpg) center no-repeat;
+    z-index: 10;
+    position: relative;
+}
+.tab li:nth-child(2).on{
+    background: url(./images/ko/hub/sub/new_pc/t_on.jpg) center no-repeat;
+}
+.tab li:nth-child(3).on{
+    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
+}
+.tab li:nth-child(4).on{
+    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
+}
+.tab li:nth-child(5).on{
+    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
+} */
