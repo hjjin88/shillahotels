@@ -567,11 +567,6 @@
                 <div class="map_tab">
                     <div class="tab_wrap">
                         <ul class="tab">
-                            <!-- <li class="on" data-tab="menu1"><a href="#none">전체</a></li>
-                            <li data-tab="menu2"><a href="#none">대한민국</a></li>
-                            <li data-tab="menu3"><a href="#none">아시아</a></li>
-                            <li data-tab="menu4"><a href="#none">유럽</a></li>
-                            <li data-tab="menu5"><a href="#none">미국</a></li> -->
                             <li class="on" data-tab="menu1"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_01_on.png" alt="신라호텔 지도 이미지"></a></li>
                             <li data-tab="menu2"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_02_off.png" alt="신라호텔 지도 이미지"></a></li>
                             <li data-tab="menu3"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_03_off.png" alt="신라호텔 지도 이미지"></a></li>
@@ -597,14 +592,14 @@
                     <img src="./images/ko/hub/sub/new_pc/Brands.jpg" alt="Our Brands 이미지">
                     <div class="intro_swiper">
                         <!-- Link Swiper's CSS -->
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+                        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
 
                         <div class="intro_wrap">
                             <ul class="intro">
-                                <li class="on" data-tab="swiper1"><a href="#none">신라호텔</a></li>
-                                <li data-tab="swiper2"><a href="#none">신라모노그램</a></li>
-                                <li data-tab="swiper3"><a href="#none">신라스테이</a></li>
-                                <li data-tab="swiper4" style="pointer-events: none;"><a href="#none">Midscale</a></li>
+                                <li class="on" data-tab="swiper1"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_06_on.png" alt="신라호텔 지도 이미지"></a></li>
+                                <li data-tab="swiper2"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_07_off.png" alt="신라호텔 지도 이미지"></a></li>
+                                <li data-tab="swiper3"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_08_off.png" alt="신라호텔 지도 이미지"></a></li>
+                                <li data-tab="swiper4" style="pointer-events: none;"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_09_off.png" alt="신라호텔 지도 이미지"></a></li>
                             </ul>
                             <div id="swiper1" class="intro-tab on">
                                 <img src="./images/ko/hub/sub/new_pc/shilla_01.jpg" alt="신라호텔 소개 이미지">
@@ -731,7 +726,7 @@
                                 $('.map-tab').removeClass('on');
                                 $(this).addClass('on');
                                 $('#' + activeTab).addClass('on');
-
+                                // 탭 이미지 교체
                                 tabIndex = $(this).index();   
                                 $('.tab li').each(function(idx){
                                     $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_off.png','_on.png'));   
@@ -744,27 +739,23 @@
                         });
                         // swiper
                         $(function() {
+                            var tabIndex = 0; 
                             $('.intro_wrap ul.intro li').click(function() {
                                 var activeTab = $(this).attr('data-tab');
                                 $('.intro_wrap ul.intro li').removeClass('on');
                                 $('.intro-tab').removeClass('on');
                                 $(this).addClass('on');
                                 $('#' + activeTab).addClass('on');
-                                // $('.intro_wrap ul.intro li img').each(function(){
-                                //     $('.intro_wrap ul.intro li img').attr('src', $('.intro_wrap ul.intro li img').attr('src').replace('all_on.jpg', 'all_off.jpg'));
-                                //     });
-                                // $('.intro_wrap ul.intro li img').attr('src', $('.intro_wrap ul.intro li img').attr('src').replace('all_off.jpg', 'all_on.jpg'));
-                                // });
-                                // $('.intro_wrap ul.intro li').each(function(idx){
-                                //     $(this).find('img').attr('src', $(this).find('img').attr('src').replace('all_off','all_on'));   
-                                //     if(tabIndex != idx) {
-                                //         $(this).find('img').attr('src', $(this).find('img').attr('src').replace('all_on','all_off'));
-                                //     }
-                                // });
-                                // $('.tab_wrap > div').eq(tabIndex).show().siblings('div').hide();
-                            });
-
-
+                                // 탭 이미지 교체
+                                tabIndex = $(this).index();   
+                                $('.intro li').each(function(idx){
+                                    $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_off.png','_on.png'));   
+                                    if(tabIndex != idx) {
+                                        $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_on.png','_off.png'));
+                                    }
+                                });
+                                $('.intro_wrap > div').eq(tabIndex).show().siblings('div').hide();
+                            })
                         });
                     </script>
                 </div>

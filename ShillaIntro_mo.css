@@ -24,7 +24,7 @@
 .intro_swiper.mo .intro_wrap .intro li.on  a{color: rgb(123, 100, 78);border-bottom: 2px solid #83766e;}
 .intro_swiper.mo .swiper-button-prev{left: 0;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .intro_swiper.mo .swiper-button-next{right: 0;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
-.swiper-button-next, .swiper-rtl .swiper-button-prev,
+.swiper-rtl .swiper-button-prev,
 .intro_swiper.mo .swiper-button-prev:after,
 .intro_swiper.mo .swiper-button-next:after{display: none;}
 .bar_con.beige{padding-top: 0;padding-bottom: 60px;background: rgb(241, 234, 215);}
