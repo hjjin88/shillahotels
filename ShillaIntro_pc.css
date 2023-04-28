@@ -7,7 +7,7 @@
 .map_tab ul.tab li.on a{color: #9d8c78;}
 .map_tab .map-tab.on, .intro-tab.on{display: block;}
 .map_tab .map-tab img, .intro-tab img{width: 100%;}
-.intro_wrap .intro{    position: relative;margin: 0 auto;background: #fff;border-bottom: 1px solid #e5e5e5;}
+.intro_wrap .intro{position: relative;margin: 0 auto;background: #fff;border-bottom: 1px solid #e5e5e5;}
 .intro_wrap .intro li a {text-decoration: none;display: flex;align-items: center;justify-content: center;width: 216px;color: #999;font-weight: 600;}
 .intro_swiper .swiper-container{height: fit-content;}
 .intro_swiper .swiper-con{overflow: hidden;position: relative;width: 1200px;margin: 0 auto;}
