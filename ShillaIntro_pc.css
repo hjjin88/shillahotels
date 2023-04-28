@@ -1,9 +1,9 @@
 .contain.new-pc{padding: 0;}
 .new-con img{width: 100%;}
 .map_tab .tab_wrap{position: relative;}
-.map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;margin: 39px auto;padding: 0px;background: #f7f7f7;}
-.map_tab .tab li a {display: flex;align-items: center;justify-content: center;text-decoration: none;padding: 10px 25px 10px 0;font-weight: 600;color: #454545;}
-.map_tab .tab li a::before{content: '';width: 1px;height: 14px;margin-right: 25px;background: #cbcbcb;}
+.map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;margin: 27px auto;padding: 0px;background: #f7f7f7;}
+/* .map_tab .tab li a {display: flex;align-items: center;justify-content: center;text-decoration: none;padding: 10px 25px 10px 0;font-weight: 600;color: #454545;}
+.map_tab .tab li a::before{content: '';width: 1px;height: 14px;margin-right: 25px;background: #cbcbcb;} */
 .map_tab .tab li:first-child a::before{display: none;}
 .map_tab .map-tab, .intro-tab{display: none;}
 .map_tab ul.tab li.on a{color: #9d8c78;}
@@ -26,22 +26,4 @@
 .new-con .btnSet li{
     width:unset;
     margin-right: 10px;
-    /* position: relative; */
 }
-/* .tab li:nth-child(1).on{
-    background: url(./images/ko/hub/sub/new_pc/t_on.jpg) center no-repeat;
-    z-index: 10;
-    position: relative;
-}
-.tab li:nth-child(2).on{
-    background: url(./images/ko/hub/sub/new_pc/t_on.jpg) center no-repeat;
-}
-.tab li:nth-child(3).on{
-    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
-}
-.tab li:nth-child(4).on{
-    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
-}
-.tab li:nth-child(5).on{
-    background: url(../../images/ko/mem/main/t_on.jpg) center no-repeat;
-} */
