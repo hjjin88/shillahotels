@@ -1,13 +1,16 @@
+.mt20{margin-top: 20px !important;}
+.pt40{padding-top: 40px !important;background: #f7f7f7 !important;}
+
 .contain.new-pc{padding: 0;}
 .new-con img{width: 100%;}
 .map_tab .tab_wrap{position: relative;}
-.map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;margin: 27px auto 0;background: #f7f7f7;}
+.map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;}
 .map_tab .tab li:first-child a::before{display: none;}
 .map_tab .map-tab, .intro-tab{display: none;}
 .map_tab ul.tab li.on a{color: #9d8c78;}
 .map_tab .map-tab.on, .intro-tab.on{display: block;}
-.intro_wrap .intro{position: relative;margin: 0 auto;background: #fff;border-bottom: 1px solid #e5e5e5;}
-.intro_wrap .intro li a {text-decoration: none;display: flex;align-items: center;justify-content: center;width: 216px;color: #999;font-weight: 600;}
+.intro_wrap .intro{position: relative;border-bottom: 1px solid #e5e5e5;}
+.intro_wrap .intro li a {display: flex;}
 .intro_swiper .swiper-container{margin: 0 15%;}
 .intro_swiper .swiper-pagination{font-size: 15px;color: #fff;}
 .intro_swiper .swiper-button-prev{top: 50%;left: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slidePrev.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
