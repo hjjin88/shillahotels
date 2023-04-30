@@ -9,7 +9,7 @@
 .new-mo img{width: 100%;margin: 0 auto;}
 .txt_box{padding-bottom:40px;}
 .txt_box dt{padding: 60px 0 15px;font-size: 20px;font-weight: bold;line-height: 15px;color: rgb(34, 34, 34);letter-spacing: -0.4px;word-spacing: -0.6px;}
-.txt_box dd.desc{padding: 10px 0 20px;color: rgb(153, 153, 153);}
+.txt_box dd.desc{padding: 10px 0;color: rgb(153, 153, 153);}
 .txt_box dd{font-size: 16px;line-height: 24px;letter-spacing:-0.6px;word-spacing: 0.6px;color: rgb(102, 102, 102);}
 .intro-tab .txt_box dt{padding-bottom: 0;}
 .bar_con::before{content: '';background: url(./images/ko/hub/sub/new_mo/bar.jpg) center no-repeat;;width: 100%;height: 14px;position: absolute;top: 0;left: 0;}
