@@ -2,7 +2,11 @@
 .pt40{padding-top: 40px !important;background: #f7f7f7 !important;}
 
 .contain.new-pc{padding: 0;}
-.new-con img{width: 100%;}
+/* .new-con img{width: 100%;} */
+.new-con{
+    margin: 0 auto;
+    width: 1920px;
+}
 .map_tab .tab_wrap{position: relative;}
 .map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;}
 .map_tab .tab li:first-child a::before{display: none;}
