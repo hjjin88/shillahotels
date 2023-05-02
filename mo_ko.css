@@ -7,7 +7,7 @@
 .pt50{padding-top: 50px !important;}
 
 .new-mo {text-align: center;}
-.new-mo img{width: 100%;margin: 0 auto;}
+.new-mo img{display: block;width: 100%;}
 .txt_box{padding-bottom:40px;}
 .txt_box dt{padding: 60px 0 15px;font-size: 20px;font-weight: bold;line-height: 15px;color: rgb(34, 34, 34);letter-spacing: -0.4px;word-spacing: -0.6px;}
 .txt_box dd.desc{padding: 10px 0;color: rgb(153, 153, 153);}

@@ -1,12 +1,9 @@
 .mt20{margin-top: 20px !important;}
 .pt40{padding-top: 40px !important;background: #f7f7f7 !important;}
+.w-1920{width: 1920px !important;margin: 0 auto !important;}
+.w-1200{width: 1200px !important;margin: 0 auto !important;}
 
-.contain.new-pc{padding: 0;}
-/* .new-con img{width: 100%;} */
-.new-con{
-    margin: 0 auto;
-    width: 1920px;
-}
+.contain.new-pc{padding-top: 0;}
 .map_tab .tab_wrap{position: relative;}
 .map_tab .tab, .intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;}
 .map_tab .tab li:first-child a::before{display: none;}
@@ -15,7 +12,7 @@
 .map_tab .map-tab.on, .intro-tab.on{display: block;}
 .intro_wrap .intro{position: relative;border-bottom: 1px solid #e5e5e5;}
 .intro_wrap .intro li a {display: flex;}
-.intro_swiper .swiper-container{margin: 0 15%;padding-bottom: 23px;}
+.intro_swiper .swiper-container{padding-bottom: 23px;}
 .intro_swiper .swiper-pagination{bottom: 0;font-size: 15px;color: #999;text-align: right;}
 .intro_swiper .swiper-pagination-current{color: #101010;font-weight: bold;}
 .intro_swiper .swiper-pagination-total{color: #999;}
