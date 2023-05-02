@@ -11,13 +11,14 @@
 .map_tab .map-tab.on, .intro-tab.on{display: block;}
 .intro_wrap .intro{position: relative;border-bottom: 1px solid #e5e5e5;}
 .intro_wrap .intro li a {display: flex;}
-.intro_swiper .swiper-container{margin: 0 15%;}
-.intro_swiper .swiper-pagination{font-size: 15px;color: #fff;}
+.intro_swiper .swiper-container{margin: 0 15%;padding-bottom: 23px;}
+.intro_swiper .swiper-pagination{bottom: 0;font-size: 15px;color: #999;text-align: right;}
+.intro_swiper .swiper-pagination-current{color: #101010;font-weight: bold;}
+.intro_swiper .swiper-pagination-total{color: #999;}
 .intro_swiper .swiper-button-prev{top: 50%;left: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slidePrev.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
 .intro_swiper .swiper-button-next{top: 50%;right: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slideNext.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
 .new-con .btnSet{display: flex;justify-content: center;height: unset;margin-bottom: 150px;}
 .new-con .btnSet li{width:unset;margin-right: 10px;}
-
 
 /* 공통 main.css 푸터부분 수정 css */
 .foot .localBox .linkInfo .introduction dd{margin: 0 !important;}

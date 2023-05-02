@@ -14,8 +14,10 @@
 .intro-tab .txt_box dt{padding-bottom: 0;}
 .bar_con::before{content: '';background: url(./images/ko/hub/sub/new_mo/bar.jpg) center no-repeat;;width: 100%;height: 14px;position: absolute;top: 0;left: 0;}
 .bar_con{position: relative;margin-top: 60px;padding-top: 50px;}
-.intro_swiper.mo .swiper-container{height: fit-content;margin: 0 5%;}
-.intro_swiper.mo .swiper-pagination {font-size: 15px;color: #fff;}
+.intro_swiper.mo .swiper-container{height: fit-content;margin: 0 5%;padding-bottom: 25px;}
+.intro_swiper.mo .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
+.intro_swiper.mo .swiper-pagination-current{color: #101010;}
+.intro_swiper.mo .swiper-pagination-total{color: #999;}
 .intro_swiper.mo .intro_wrap .intro{display: flex;align-items: center;justify-content: space-around;width: 100%;margin: 0 auto;padding: 0px;list-style: none;overflow: hidden;position: absolute;background: #fff;border: 0;}
 .intro_swiper.mo .intro_wrap .intro-tab{display: none;}
 .intro_swiper.mo .intro_wrap .intro-tab.on{display: block;}

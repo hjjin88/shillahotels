@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ko" class="webkit chrome win  js portrait pc"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Photos | 서울신라호텔</title>
+    <meta name="description" content="호텔사진"><meta name="keywords" content="Photos, 호텔사진">
+    <meta name="og:title" content="Photos | 서울신라호텔">
+    <link href="https://www.shilla.net/css/seoul/common.css" rel="stylesheet" type="text/css">
+    <link href="https://www.shilla.net/css/common/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="https://www.shilla.net/css/common/reserve_new.css" rel="stylesheet" type="text/css">
+    <link href="https://www.shilla.net/css/common/lang-ko_N.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-30Y6N61ES4&amp;l=dataLayer&amp;cx=c"></script>
+    <script gtm="GTM-T3LBJ26" type="text/javascript" async="" src="https://www.google-analytics.com/gtm/optimize.js?id=OPT-NQ9CLZ3"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T3LBJ26"></script>
+    <script src="https://www.shilla.net/js/jquery-1.8.3.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/jquery/jquery-ui-1.10.3.min.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/json2.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/uniform.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/browser.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/style.seoul.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/jquery.flexslider-min.js"></script><!-- 2017 추가 -->
+    <script src="https://www.shilla.net/seoul/secu/messageJs.do" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/common.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/commonEx.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/jquery.slides.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/mbr/popLogin.js" charset="UTF-8"></script>
+</head>
+<body class="subBody mypageBody">
+    <div id="popLoginDiv" class="popLogin" style="display:none"></div>
+    <script src="https://www.shilla.net/js/mbr/forIdPwd.js" charset="UTF-8"></script>
+    <div id="popForIdPwDiv" style="display:none">0</div>
+    <script src="https://www.shilla.net/js/popCalendar.js" charset="UTF-8"></script>
+    <div id="popCalendarDiv" class="popCalendar" style="display:none"></div>
+    <script src="https://www.shilla.net/js/resv/resvCalendar.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/resv/resv.js?dt=20230502" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/resv/din.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/ask/ask.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/mbr/zipno.js" charset="UTF-8"></script>
+    <div id="zipNoLayerDiv" class="popLogin" style="display:none"></div>
+    <script src="https://www.shilla.net/js/offers/makeAPlan.js" charset="UTF-8"></script>
+    <div id="makeAPlanLayerDiv" class="popLogin" style="display:none"></div>
+    <script src="https://www.shilla.net/js/mbr/mbr_join.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/makePCookie.js" charset="UTF-8"></script>
+    <script src="https://www.shilla.net/js/jquery.cookie.js" charset="UTF-8"></script>
+    <!--[if IE 6]><script src="https://www.shilla.net/js/png24.js"></script><![endif]-->
+    <script src="https://www.shilla.net/js/style.advance.js" charset="UTF-8"></script><!-- 개선 : js 추가 -->
+    <script src="https://www.shilla.net/js/resv/advResvCalendar.js" charset="UTF-8"></script> <!-- 개선 : [2019_모션추가] 달력 고도화 -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T3LBJ26');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+    
+    var UserInfo = UserInfo || (function() {
+        var module = {};
+        var _isLogin = false;
+        var _firstName = "";
+        var _lastName = "";
+        var _nameKo = "";
+        var _email = "";
+        var _phoneNumber = "";
+        
+        var ajax = function(callback) {
+             jQuery.ajax(
+                 {
+                     url: 'https://www.shilla.net/cmm/getUserInfo.do',
+                     type: "post",
+                     dataType: "jsonp",
+                     error: function(){
+                         callback(null);
+                     },
+                     success: function( strData ){
+                         if(strData.NAME_ID != '') {
+                             _isLogin = true;
+                             _firstName = strData.FIRST_NAME;
+                             _lastName = strData.LAST_NAME;
+                             _nameKo = strData.LAST_NAME_KO;
+                             _email = strData.EMAIL;
+                             _phoneNumber = strData.PHONE_NUMBER_MOBILE;
+                         }
+                         callback(_firstName + " " +_lastName + " " + _nameKo +" "+ _email + " "+ _phoneNumber);
+                     }
+                 }                           
+             );
+        };
+        
+        module.drawName = function(callback) {
+            ajax(callback);
+        };
+        
+        module.isLogin = function() {
+            return _isLogin;
+        };
+        
+        return module;
+    })();
+    </script>
+    <script type="text/javascript">
+    
+    var filter = "win16|win32|win64|mac|macintel";
+    var pcFlag = $.cookie('SHILLA_PC');
+    var prefix = '/seoul';
+    var hotls = 'hub|seoul|jeju';
+     
+    if(navigator.platform){
+        if( filter.indexOf(navigator.platform.toLowerCase())<0){
+            if (pcFlag != 'Y' && request.getParameter("gubun") !='Y') {
+                if (hotls.indexOf(prefix)<0) {
+                    document.location.href = "http://www.shillahotels.com/mbl/index.do";
+                } else {
+                    document.location.href = "http://m.shilla.nethttps://www.shilla.net/seoul/index.do";
+                }
+            }
+        } 
+    }
+    
+    </script>
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LBJ26"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <dl class="skipNavi">
+        <dt>THE SHILLA 바로가기 메뉴</dt><dd><a class="goContents" href="#contents">본문으로 바로가기</a></dd><dd><a class="goGnbMenu" href="#gnbMenu">메인메뉴 바로가기</a></dd></dl>
+    
+    <div class="subWrap subWrapSeoul">
+        
+        <div class="head headSeoul">
+            <script type="text/javascript">
+    jQuery(document).ready(function(){
+        hotlId = 'S';
+        if(hotlId == 'S') {
+            jQuery(".SeoulBtn").attr("class","SeoulBtn on");
+        } else if(hotlId == 'C') {
+            jQuery(".JejuBtn").attr("class","JejuBtn on");
+        } else if(hotlId == 'HUB') {
+            jQuery(".theShillaBtn").attr("class","theShillaBtn on");
+        }
+    });
+    function ssoLogout() {
+        location.href = "https://www.shilla.net/index.do/login/SSOLogout.do";
+    
+    }
+    function fnNoticeAlert() {
+        alert("2015년 7월 27일 신라호텔의 새로운 멤버십 서비스 신라리워즈가 오픈함에 따라 온라인 회원 서비스가 종료됩니다. 다이너스티 또는 골드 멤버십에 가입하셨던 고객께서는 신라리워즈 멤버십으로 전환하여 주시면 감사하겠습니다.");
+    }
+    </script>
+    <script>
+    document.oncontextmenu = function(){ // 컨텍스트 메뉴금지
+        return false;
+    };
+    </script>
+            <div class="header">
+                <h1 class="logo"><a href="https://www.shilla.net/seoul/index.do">THE SHILLA SEOUL</a></h1>
+                <!-- 로그인 -->
+                <span class="loginArea" id="loginAreaSpan">
+                    <a href="https://www.shilla.net/membership/mbr/login/memLogin.do?lang=ko&amp;propertyId=S&amp;re=m">로그인</a>
+                    <a href="https://www.shilla.net/mem/mbr/join/memViewBrowsewrap.do?resvYn=Y&amp;lang=ko&amp;propertyId=S&amp;re=m">신라리워즈 가입</a>
+                    </span>
+                <!-- 식음에약 개발 추가 -->
+                <div class="resvConfirm" id="loginAreaDiv" style="display: none;">
+                    <div class="resvConBox">
+                        <a class="btn" href="#">예약확인</a>
+                        <ul class="list" style="display: none;">
+                            <li class="dn1 first last">
+                                <ul class="listSt">
+                                    <li class="st first st1">
+                                        <a href="https://www.shilla.net/membership/mbr/login/memLogin.do?resvYn=Y&amp;lang=ko&amp;propertyId=S&amp;re=m"><span>객실<!-- 객실 --></span></a>
+                                    </li>
+                                    <li class="st last st2">
+                                        <a href="https://www.shilla.net/fbresv/web/memDiningListResv.do?lang=ko"><span>다이닝<!-- 다이닝 --></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- 로그아웃 -->
+                <span class="loginArea" id="logoutAreaSpan" style="display:none;">
+                    <a href="javascript:ssoLogout();">로그아웃</a>
+                    <a href="https://www.shilla.net/membership/mbr/login/memLogin.do?propertyId=S&amp;lang=ko&amp;re=m">마이페이지</a>
+                    </span>
+                <!-- 식음에약 개발 추가 -->
+                <div class="resvConfirm" id="logoutAreaDiv">
+                    <div class="resvConBox">
+                        <a class="btn" href="#">예약확인<!-- 예약확인 --></a>
+                        <ul class="list" style="display: none;">
+                            <li class="dn1 first last">
+                                <ul class="listSt">
+                                    <li class="st first st1 st3">
+                                        <a href="https://www.shilla.net/membership/mbr/login/memLogin.do?resvYn=Y&amp;lang=ko&amp;propertyId=S&amp;re=m"><span>객실<!-- 객실 --></span></a>
+                                    </li>
+                                    <li class="st last st2 st4">
+                                        <a href="https://www.shilla.net/membership/mbr/login/memLogin.do?resvYn=Y&amp;resvType=D&amp;lang=ko"><span>다이닝<!-- 다이닝 --></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- 한국어 영어 일어 시작  -->
+                <div class="language">
+                    <div class="globalBox">
+                    <a class="btn" href="#">한국어</a><ul class="list" style="display: none;">
+                        <li class="dn1 first last">
+                            <ul class="listSt">
+                                <li class="st first st5"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=en"><span>English</span></a></li><li class="st st6"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=ja"><span>日本語</span></a></li><li class="st last st7"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=zh"><span>简体中文</span></a></li></ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(function() {
+                        jQuery('.dn1 > ul > li').each(function(idx) {
+                            jQuery(this).addClass('st'+(idx+1));
+                        });
+                    });
+                </script>
+                <div class="topMem"><a href="https://www.shilla.net/seoul/mbsh/index.do">멤버십</a></div>
+    
+                <!-- oks -->
+                <!-- Find a hotel 시작 -->
+                <div class="hotelBox_wrap"><!-- 개선 : class="hotelBox_wrap"변경 -->
+                    <a class="btn" href="javascript:void(0);">호텔찾기</a>
+    
+                    <!-- 개선 : 호텔찾기 -->
+                    <div class="hotelBox_N">
+                        <div class="hHead">
+                            <ul class="htTab">
+                                <!-- a 선택시 li class on 추가 -->
+                                  <li class="tab2 on first"><a href="#"><span>권역별</span></a></li>
+                                <li class="tab1 last"><a href="#"><span>브랜드별</span></a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- 권역별 -->
+                        <div class="hCon">
+                            <div class="list2">
+                                <dl>
+                                    <dt><a href="#"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_tit1.gif" alt="국내"></a></dt>
+                                    <dd>
+                                        <strong class="tit"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_stit1.gif" alt="서울 강북"></strong>
+                                        <ul>
+                                            <li class="first"><a href="https://www.shilla.nethttps://www.shilla.net/seoul/index.do?lang=ko">서울신라호텔</a></li>
+                                                                <li><a href="https://www.shillastay.com/gwanghwamun/index.do?lang=ko">신라스테이 광화문</a></li>
+                                                                    <li><a href="https://www.shillastay.com/mapo/index.do?lang=ko">신라스테이 마포</a></li>
+                                                                    <li class="last"><a href="https://www.shillastay.com/seodaemun/index.do?lang=ko">신라스테이 서대문</a></li>
+                                                                    </ul>
+                                    </dd>
+                                    <dd>
+                                        <strong class="tit"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_stit2.gif" alt="서울 강남"></strong>
+                                        <ul>
+                                            <li class="first"><a href="https://www.shillastay.com/yeoksam/index.do?lang=ko">신라스테이 역삼</a></li>
+                                                                    <li><a href="https://www.shillastay.com/seocho/index.do?lang=ko">신라스테이 서초</a></li>
+                                                                    <li><a href="https://www.shillastay.com/guro/index.do?lang=ko">신라스테이 구로</a></li>
+                                                                    <li class="last"><a href="https://www.shillastay.com/samsung/index.do?lang=ko">신라스테이 삼성</a></li>
+                                                                    </ul>
+                                    </dd>
+                                    <dd>
+                                        <strong class="tit"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_stit3.gif" alt="전국"></strong>
+                                        <ul>
+                                            <li class="first"><a href="https://www.shilla.net/jeju/index.do?lang=ko">제주신라호텔</a></li>
+                                                                <li><a href="https://www.shillastay.com/dongtan/index.do?lang=ko">신라스테이 동탄</a></li>
+                                                                    <li><a href="https://www.shillastay.com/cheonan/index.do?lang=ko">신라스테이 천안</a></li>
+                                                                    <li><a href="https://www.shillastay.com/ulsan/index.do?lang=ko">신라스테이 울산</a></li>
+                                                                    <li><a href="https://www.shillastay.com/haeundae/index.do?lang=ko">신라스테이 해운대</a></li>
+                                                                    <li><a href="https://www.shillastay.com/seobusan/index.do?lang=ko">신라스테이 서부산</a></li>
+                                                                    <li><a href="https://www.shillastay.com/yeosu/index.do?lang=ko">신라스테이 여수</a></li>
+                                                                    <li class="last"><a href="https://www.shillastay.com/jeju/index.do?lang=ko">신라스테이 제주</a></li>
+                                                                </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="#"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_tit2.gif" alt="해외"></a></dt>
+                                    <dd>
+                                        <strong class="tit"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab2_stit4.gif" alt="베트남"></strong>
+                                        <ul>
+    
+                                            <li class="first last"><a href="https://www.shillamonogram.com/dnmg/index.do?lang=ko">신라모노그램 다낭</a></li>
+                                                            </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- //권역별 -->
+    
+                        <!-- 브랜드별 s -->
+                        <div class="hCon" style="display:none">
+                            <div class="list1">
+                                <dl>
+                                    <dt><a href="https://www.shilla.net"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab1_tit1.gif" alt="THE SHILLA"></a></dt>
+                                    <dd>
+                                        <ul>
+                                <li class="first"><a href="https://www.shilla.nethttps://www.shilla.net/seoul/index.do?lang=ko">서울신라호텔</a></li>
+                                                        <li class="last"><a href="https://www.shilla.net/jeju/index.do?lang=ko">제주신라호텔</a></li>
+                                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="https://www.shillamonogram.com/mghub/index.do?lang=ko"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab1_tit2.gif" alt="SHILLA MONOGRAM"></a></dt>
+                                    <dd>
+                                        <ul>
+    
+                                            <li class="first last"><a href="https://www.shillamonogram.com/dnmg/index.do?lang=ko">신라모노그램 다낭</a></li>
+                                                            </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="https://www.shillastay.com/"><img src="https://www.shilla.net/images/ko/jeju/new_2019/main_tab1_tit3.gif" alt="SHILLA STAY"></a></dt>
+                                    <dd>
+                                        <ul>
+                                            <li class="first"><a href="https://www.shillastay.com/gwanghwamun/index.do?lang=ko">신라스테이 광화문</a></li>
+                                                                <li><a href="https://www.shillastay.com/mapo/index.do?lang=ko">신라스테이 마포</a></li>
+                                                                <li><a href="https://www.shillastay.com/seodaemun/index.do?lang=ko">신라스테이 서대문</a></li>
+                                                                <li><a href="https://www.shillastay.com/yeoksam/index.do?lang=ko">신라스테이 역삼</a></li>
+                                                                <li><a href="https://www.shillastay.com/seocho/index.do?lang=ko">신라스테이 서초</a></li>
+                                                                <li><a href="https://www.shillastay.com/guro/index.do?lang=ko">신라스테이 구로</a></li>
+                                                                <li><a href="https://www.shillastay.com/samsung/index.do?lang=ko">신라스테이 삼성</a></li>
+                                                                <li><a href="https://www.shillastay.com/dongtan/index.do?lang=ko">신라스테이 동탄</a></li>
+                                                                <li><a href="https://www.shillastay.com/cheonan/index.do?lang=ko">신라스테이 천안</a></li>
+                                                                <li><a href="https://www.shillastay.com/ulsan/index.do?lang=ko">신라스테이 울산</a></li>
+                                                                <li><a href="https://www.shillastay.com/haeundae/index.do?lang=ko">신라스테이 해운대</a></li>
+                                                                <li><a href="https://www.shillastay.com/seobusan/index.do?lang=ko">신라스테이 서부산</a></li>
+                                                                <li><a href="https://www.shillastay.com/yeosu/index.do?lang=ko">신라스테이 여수</a></li>
+                                                                <li class="last"><a href="https://www.shillastay.com/jeju/index.do?lang=ko">신라스테이 제주</a></li>
+                                                            </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- //브랜드별 -->
+                        <a href="#" class="btnClose">닫기</a>
+                    </div>
+                    <!-- //개선 : 호텔찾기 -->
+                </div>
+    
+            </div>
+    <script>
+    var usrInfo = "";
+    jQuery(function() {
+        UserInfo.drawName(function(name) {
+            name = jQuery.trim(name);
+            if(name != null && name != undefined && name != '') {
+                jQuery("#logoutAreaSpan").show();
+                jQuery("#loginAreaSpan").hide();
+                jQuery("#logoutAreaDiv").hide();
+                jQuery("#loginAreaDiv").show();
+            } else {
+                jQuery("#loginAreaSpan").show();
+                jQuery("#logoutAreaSpan").hide();
+                jQuery("#loginAreaDiv").hide();
+                jQuery("#logoutAreaDiv").show();
+            }
+            usrInfo = name.split(" ");
+        });
+    });
+    </script><div class="gnbSub">
+    <div id="gnbMenu" class="gnbMenu">
+        <ul class="menu">
+                    <li class="m1 first">
+                        <a href="https://www.shilla.net/seoul/offers/pack/listPack.do" class=""><span>스페셜 오퍼</span></a>
+                        <ul class="sm">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/offers/pack/listPack.do"><span>패키지</span></a></li>
+                            <li class="s2 last"><a href="https://www.shilla.net/seoul/offers/event/listEvent.do"><span>이벤트</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="m2"><a href="https://www.shilla.net/seoul/accommodation/index.do" class=""><span>객실</span></a>
+                        <ul class="sm">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/accommodation/viewAccmo.do?contId=DX"><span>스탠다드</span></a></li>
+                            <li class="s2"><a href="https://www.shilla.net/seoul/accommodation/viewAccmo.do?contId=EX"><span>이그제큐티브</span></a></li>
+                            <li class="s3"><a href="https://www.shilla.net/seoul/accommodation/viewAccmo.do?contId=SS"><span>스위트</span></a></li>
+                            <li class="s4"><a href="https://www.shilla.net/seoul/accommodation/viewAccLng.do?contId=ACCMO_LOUNGE"><span>전체 객실 보기</span></a></li>
+                            <li class="s5 last"><a href="https://www.shilla.net/seoul/accommodation/allRoom.do"><span>전체 객실 보기</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="m3">
+                        <a href="https://www.shilla.net/seoul/dining/index.do" class=""><span>다이닝</span></a>
+                        <ul class="sm">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/dining/viewDining.do?contId=KRN"><span>파인 다이닝</span></a></li>
+                            <li class="s2"><a href="https://www.shilla.net/seoul/dining/viewDining.do?contId=LIB"><span>라운지 &amp; 바</span></a></li>
+                            <li class="s3 last"><a href="https://www.shilla.net/seoul/dining/viewDining.do?contId=PSBQ"><span>베이커리</span></a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="m4">
+                        <a href="https://www.shilla.net/seoul/retreat/index.do" class="over"><span>휴식시설</span></a>
+                        <ul class="sm">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/retreat/opUrbanIsland.do"><span>야외 수영장</span></a></li>
+                            <li class="s2"><a href="https://www.shilla.net/seoul/retreat/spGuerlainSpa.do"><span>스파</span></a></li>
+                            <li class="s3"><a href="https://www.shilla.net/seoul/retreat/fnPool.do"><span>피트니스</span></a></li>
+                            <li class="s4"><a href="https://www.shilla.net/seoul/retreat/sculpturePark.do"><span>조각공원</span></a></li>
+                            <li class="s5 last"><a href="https://www.shilla.net/seoul/facilities/arcade.do"><span>아케이드</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="m5">
+                        <a href="https://www.shilla.net/seoul/meetingevent/index.do" class=""><span>웨딩 &amp; 연회</span></a>
+                        <ul class="sm">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/meetingevent/wdWeddingHall.do"><span>웨딩</span></a></li>
+                            <li class="s2"><a href="https://www.shilla.net/seoul/meetingevent/mtGrandBallRoom.do"><span>기업연회</span></a></li>
+                            <li class="s3 last"><a href="https://www.shilla.net/seoul/meetingevent/cbInformation.do"><span>가족연회</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="m6 last">
+                        <a href="https://www.shilla.net/seoul/introduction/photos/listPhotos.do?searchDbbsCatCd=ALL" class="on"><span>갤러리</span></a>
+                        <ul class="sm" style="display: block;">
+                            <li class="s1 first"><a href="https://www.shilla.net/seoul/introduction/photos/listPhotos.do?searchDbbsCatCd=ALL" class="on"><span>사진</span></a></li>
+                            <li class="s2 last"><a href="https://www.shilla.net/seoul/introduction/videos/listVideos.do"><span>동영상</span></a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+                <!-- 식음예약 개발 추가 -->
+                <div class="resvMenu">
+                <a title="예약패널열기" href="#" class="btnGnbReservation"><span>예약</span></a>
+                <ul class="sm" style="display: none;">
+                    <li class="s1 first"><a href="https://www.shilla.nethttps://www.shilla.net/seoul/resv/rpm/memSetStep1.do?lang=ko&amp;propertyId=S&amp;sBar=Y">객실<!-- 객실 --></a></li>
+                    <li class="s2 last"><a href="https://www.shilla.net/fbresv/web/memDiningStepWait.do?hotlId=S&amp;lang=ko">다이닝<!-- 다이닝 --></a></li>
+                </ul>
+                </div>
+            </div></div>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 수정부분 -->
+        <div class="contain new-pc">
+        
+
+        <div class="contents" id="contents">
+                    <script>
+    $(document).ready(function() { 
+        $(".gnbMenu .m6 .s1>a").addClass("on").parent().parent().parent().children("a").addClass("on").next().show();
+        $(".lnbMenu .menu .m1>a").addClass("on");
+    }); 
+    var startFullNum = 1;
+    
+    var totalCount = 14;
+    
+    function startFullNumSet(num){
+        startFullNum = num;
+    }
+    
+    function startFullNumSetPer(){
+        if(startFullNum == 1){
+            startFullNum = totalCount;
+        }else{
+            startFullNum = startFullNum - 1;
+        }
+    }
+    
+    function startFullNumSetNext(){
+        
+        if(startFullNum == totalCount){
+            startFullNum = 1;
+        }else{
+            startFullNum = startFullNum + 1;
+        }
+        
+    }
+    
+    
+                    </script>
+                    <div class="ctnGallery ctnPhoto">
+
+                        <script type="text/javascript" src="https://www.shilla.net/js/jquery.ad-galleryPhoto.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                var galleries = $('.ad-gallery').adGallery({update_window_hash: false});
+                                //$(".ad-info").clone().prependTo(".ad-controls").addClass("ad-info2");
+                            });
+                        </script>
+    
+                        <div id="tab1" class="tab-photo-menu">
+
+                            <ul class="tab-photo-content">
+                                <li class="active first last">
+                                    <div class="slideGalleryBox">
+                                    <div class="ad-gallery">
+                                        <div class="ad-image-wrapper"><div class="ad-image" style="width: 866px; height: 379px; top: 39px; left: 0px;"><img src="https://www.shilla.net/images/upload/photo/170303/FILEc1caba1168e8b9ec.png" alt="<p>남산 정경을 바라보며 여유로운 수영과 휴식을 즐기실 수 있습니다. </p>" width="866" height="379"><div class="ad-image-description" style="width: 866px; bottom: 0px;"><strong class="ad-description-title">실내 수영장</strong><div class="desc"><p>남산 정경을 바라보며 여유로운 수영과 휴식을 즐기실 수 있습니다. </p></div><span class="mask"></span><a class="btnFullScreen" href="javascript:;">Full Screen</a></div></div><img class="ad-loader" alt="Loading..." src="../../..https://www.shilla.net/images/kohttps://www.shilla.net/seoul/main/loader.gif" style="display: none;"><a href="javascript:startFullNumSetNext();" class="ad-next" style="height: 457px;">다음</a><a href="javascript:startFullNumSetPer();" class="ad-prev" style="height: 457px;">이전</a></div>
+                                        <div class="ad-controls">
+                                            <span class="totalNum"><span class="txt1">Total</span> <span class="txt2">19</span></span>
+                                        <p class="ad-info"><span class="total">Total</span> <span class="txt1">11 / </span> 
+                                            <span class="txt2">19</span>
+                                        </p>
+                                        <div class="ad-slideshow-controls">
+                                            <span class="ad-slideshow-start">Start</span>
+                                            <span class="ad-slideshow-stop">Stop</span>
+                                            <span class="ad-slideshow-countdown" style="display: none;">(1)</span></div>
+                                        </div>
+                                        <div class="ad-nav"><a href="javascript:startFullNumSetPer();" class="ad-back" title="이전 이미지" style="opacity: 1;">이전</a>
+                                            <div class="ad-thumbs">
+                                                <ul class="ad-thumb-list" style="width: 2338px;">
+                                                <li class="first"> <a href="https://www.shilla.net/images/upload/photo/170303/FILE969ade57e506d685.png" class=""> <img title="비즈니스 디럭스 룸" alt="<p>여유로운 공간이 돋보이는 비즈니스 디럭스 룸입니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILE161df815743030f9.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">비즈니스 디럭스 룸</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/150917/FILE3df9f032fdb82a57.jpg" class=""> <img title="서울신라호텔 전경" alt="<p>한국의 전통미와 현대적 감각을 겸비하고 있는 라이프스타일 호텔입니다. </p>" src="https://www.shilla.net/images/upload/photo/150917/FILE8e7b07b31b957301.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">서울신라호텔 전경</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILE3b529a484456ba1d.png" class=""> <img title="어번 아일랜드" alt="<p>어번 아일랜드에서는 차원이 다른 아웃도어 라이프스타일을 즐기실 수 있습니다.</p>" src="https://www.shilla.net/images/upload/photo/181023/FILEbcc2cfe2887ecff8.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">어번 아일랜드</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/150917/FILE9e7e8ba144103b0.jpg" class=""> <img title="디럭스 룸" alt="<p>디럭스 룸은 쾌적함과 안락함을 느낄 수 있도록 구성했습니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILE5855b6fb380df315.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">디럭스 룸</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/150917/FILE813e2526aa27500c.jpg" class=""> <img title="더 이그제큐티브 라운지" alt="<p>신라의 품격이 묻어나는 차별화된 라이프스타일을 제안합니다.</p>" src="https://www.shilla.net/images/upload/photo/181023/FILE226c7ebc43bb7ec7.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">더 이그제큐티브 라운지</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILE4429fa719dfb3767.png" class=""> <img title="신라 스위트" alt="<p>신라만의 특별한 경험을 누릴 수 있는 시그니처 객실입니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILEc40e01397efd0a92.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">신라 스위트</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILEfd9350e06f8b8977.png" class=""> <img title="프레지덴셜 스위트" alt="<p>전세계 국빈과 VIP 고객만을 위한 특별한 객실입니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILE43683996ae8bc68.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">프레지덴셜 스위트</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILE130940418ded96ae.jpg" class=""> <img title="라연" alt="<p>전통의 맛을 세심하고 세련되게 표현한 미쉐린 3스타 한식당입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILE96429be887a5d210.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">라연</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILE6662282a08fce31a.jpg" class=""> <img title="콘티넨탈" alt="<p>최고급 정찬과 와인을 선보이는 정통 프렌치 레스토랑입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILE6f43daa3ab47914b.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">콘티넨탈</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILEe7ff1869ee4455b2.png" class=""> <img title="어번 아일랜드 카바나" alt="<p>다양한 스타일의 카바나에서는 보다 여유로운 휴식을 즐길 수 있습니다.</p>" src="https://www.shilla.net/images/upload/photo/181023/FILE7004e77188b808.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">어번 아일랜드 카바나</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILEc1caba1168e8b9ec.png" class="ad-active"> <img title="실내 수영장" alt="<p>남산 정경을 바라보며 여유로운 수영과 휴식을 즐기실 수 있습니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILEccf82f6b42060111.jpg" class="image" style="opacity: 1;"> <span class="mask"></span> </a> <span class="tit on">실내 수영장</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILE31dd50a9c9eebd2a.png" class=""> <img title="영빈관" alt="<p>영빈관은 한국적인 기품과 격조가 느껴지는 한옥식 연회장입니다. </p>" src="https://www.shilla.net/images/upload/photo/181023/FILE28cd16f8f4458022.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">영빈관</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/170303/FILE409ff9fafb39bd94.png" class=""> <img title="다이너스티 홀" alt="<p>격조 높은 회의와 연회 행사를 연출할 수 있는 대연회장입니다.</p>" src="https://www.shilla.net/images/upload/photo/181023/FILEdb0b989b060253ba.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">다이너스티 홀</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/190624/FILEde9d0e96a43906a7.jpg" class=""> <img title="아케이드" alt="<p>엄선된 명품 브랜드만 입점되어 있는 최고급 쇼핑 공간입니다.</p>" src="https://www.shilla.net/images/upload/photo/190624/FILE714f0f88e27f48f6.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">아케이드</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILEd802ee3015756c5d.jpg" class=""> <img title="아리아께" alt="<p>오감만족의 정통 일식당입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILEb32ed9c8da325551.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">아리아께</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILEf6ae934b7f494235.jpg" class=""> <img title="팔선" alt="<p>동양적 감성과 현대미가 공존하는 품격 있는 정통 중식 레스토랑입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILEe3e6e5542e76aded.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">팔선</span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILE34a3431480ba203.jpg" class=""> <img title="더 파크뷰 " alt="<p>자연 친화적인 인테리어가 돋보이는 올데이 다이닝 레스토랑입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILE719bbc2ae52860d6.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">더 파크뷰 </span></li>
+                                                <li> <a href="https://www.shilla.net/images/upload/photo/220722/FILE60813d40c61f4eb9.jpg" class=""> <img title="더 라이브러리 " alt="<p>고객의 취향에 따라 즐기는 컨템포러리 라운지 &amp; 바 입니다. </p>" src="https://www.shilla.net/images/upload/photo/220722/FILEe209cdb47fb06c13.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">더 라이브러리 </span></li>
+                                                <li class="last"> <a href="https://www.shilla.net/images/upload/photo/220722/FILE34d3602550f658d1.jpg" class=""> <img title="패스트리 부티크" alt="<p>명품 패스트리와 케이크를 선보이는 프리미엄 베이커리입니다.</p>" src="https://www.shilla.net/images/upload/photo/220722/FILE4f2c11e295b55146.jpg" class="image" style="opacity: 0.4;"> <span class="mask"></span> </a> <span class="tit">패스트리 부티크</span></li>
+                                                </ul>
+                                            </div>
+                                        <a href="javascript:startFullNumSetNext();" class="ad-forward" title="다음 이미지" style="opacity: 1;">다음</a></div>
+                                    </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          </div>
+                    </div></div>
+    
+            </div>
+        
+        </div>
+
+
+        <!-- ********************************* 메가존 pc 작업 ********************************************  -->
+        <div class="contain new-pc">
+            <!-- test css -->
+            <link href="./pc_ko.css" rel="stylesheet" type="text/css">
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <div class="new-con">
+                <img src="./images/ko/hub/sub/new_pc/main.jpg" alt="신라호텔 이미지">
+                <img src="./images/ko/hub/sub/new_pc/development.jpg" alt="호텔개발 이미지">
+                <div class="map_tab pt40">
+                    <div class="tab_wrap">
+                        <ul class="tab">
+                            <li class="on" data-tab="menu1"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_01_on.png" alt="전체 탭 이미지"></a></li>
+                            <li data-tab="menu2"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_02_off.png" alt="대한민국 탭 이미지"></a></li>
+                            <li data-tab="menu3"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_03_off.png" alt="아시아 탭 이미지"></a></li>
+                            <li data-tab="menu4"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_04_off.png" alt="유럽 탭 이미지"></a></li>
+                            <li data-tab="menu5"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_05_off.png" alt="미국 탭 이미지"></a></li>
+                        </ul>
+                        <div id="menu1" class="map-tab on">
+                            <img src="./images/ko/hub/sub/new_pc/map_01.jpg" alt="신라호텔 전체 지도 이미지">
+                        </div>
+                        <div id="menu2" class="map-tab">
+                            <img src="./images/ko/hub/sub/new_pc/map_02.jpg" alt="신라호텔 대한민국 지도 이미지">
+                        </div>
+                        <div id="menu3" class="map-tab">
+                            <img src="./images/ko/hub/sub/new_pc/map_03.jpg" alt="신라호텔 아시아 지도 이미지">
+                        </div>
+                        <div id="menu4" class="map-tab">
+                            <img src="./images/ko/hub/sub/new_pc/map_04.jpg" alt="신라호텔 유럽 지도 이미지">
+                        </div>
+                        <div id="menu5" class="map-tab">
+                            <img src="./images/ko/hub/sub/new_pc/map_05.jpg" alt="신라호텔 미국 지도 이미지">
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/ko/hub/sub/new_pc/Brands.jpg" alt="Our Brands 이미지">
+                <div class="map_tab">
+                    <div class="intro_swiper">
+                        <div class="intro_wrap">
+                            <ul class="intro">
+                                <li class="on" data-tab="swiper1"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_06_on.png" alt="신라호텔 탭 이미지"></a></li>
+                                <li data-tab="swiper2"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_07_off.png" alt="산라모노그램 탭 이미지"></a></li>
+                                <li data-tab="swiper3"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_08_off.png" alt="신라스테이 탭 이미지"></a></li>
+                                <li data-tab="swiper4" style="pointer-events: none;"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_09_off.png" alt="Midscale 탭 이미지"></a></li>
+                            </ul>
+                            <div id="swiper1" class="intro-tab on">
+                                <img src="./images/ko/hub/sub/new_pc/shilla_01.jpg" alt="신라호텔 소개 이미지">
+                                    <div class="swiper-container">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/shilla_swiper1.jpg" alt="신라호텔 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/shilla_swiper2.jpg" alt="신라호텔 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/shilla_swiper3.jpg" alt="신라호텔 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/shilla_swiper4.jpg" alt="신라호텔 이미지">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                <img class="mt20" src="./images/ko/hub/sub/new_pc/shilla_02.jpg" alt="신라호텔 소개 이미지">
+                            </div>
+                            <div id="swiper2" class="intro-tab">
+                                <img src="./images/ko/hub/sub/new_pc/mono_01.jpg" alt="신라모노그램 소개 이미지">
+                                    <div class="swiper-container">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/mono_swiper1.jpg" alt="신라모노그램 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/mono_swiper2.jpg" alt="신라모노그램 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/mono_swiper3.jpg" alt="신라모노그램 이미지">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                <img src="./images/ko/hub/sub/new_pc/mono_02.jpg" alt="신라모노그램 소개 이미지">
+                            </div>
+                            <div id="swiper3" class="intro-tab">
+                                <img src="./images/ko/hub/sub/new_pc/stay_01.jpg" alt="신라스테이 소개 이미지">
+                                    <div class="swiper-container">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper1.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper2.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper3.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                <img src="./images/ko/hub/sub/new_pc/stay_02.jpg" alt="신라스테이 소개 이미지">
+                            </div>
+                            <div id="swiper4" class="intro-tab">
+                                <img src="./images/ko/hub/sub/new_pc/stay_01.jpg" alt="신라스테이 소개 이미지">
+                                    <div class="swiper-container">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper1.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper2.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./images/ko/hub/sub/new_pc/stay_swiper3.jpg" alt="신라스테이 이미지">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                <img src="./images/ko/hub/sub/new_pc/stay_02.jpg" alt="신라스테이 소개 이미지">
+                            </div>
+                        </div>
+
+                        <script>
+                            var swiper = new Swiper(".mySwiper", {
+                                slidesPerView : 1,
+                                spaceBetween : 0, 
+                                loop: true,
+                                pagination: {
+                                el: ".swiper-pagination",
+                                type: "fraction",
+                                },
+                                navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                                },
+                            });
+                        </script>
+                    </div>
+                    <script>
+                        // map
+                        $(function() {
+                            var tabIndex = 0; 
+                            $('.tab_wrap ul.tab li').click(function() {
+                                var activeTab = $(this).attr('data-tab');
+                                $('.tab_wrap ul.tab li').removeClass('on');
+                                $('.map-tab').removeClass('on');
+                                $(this).addClass('on');
+                                $('#' + activeTab).addClass('on');
+                                // 탭 이미지 교체
+                                tabIndex = $(this).index();   
+                                $('.tab li').each(function(idx){
+                                    $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_off.png','_on.png'));   
+                                    if(tabIndex != idx) {
+                                        $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_on.png','_off.png'));
+                                    }
+                                });
+                                $('.tab_wrap > div').eq(tabIndex).show().siblings('div').hide();
+                            })
+                        });
+                        // swiper
+                        $(function() {
+                            var tabIndex = 0; 
+                            $('.intro_wrap ul.intro li').click(function() {
+                                var activeTab = $(this).attr('data-tab');
+                                $('.intro_wrap ul.intro li').removeClass('on');
+                                $('.intro-tab').removeClass('on');
+                                $(this).addClass('on');
+                                $('#' + activeTab).addClass('on');
+                                // 탭 이미지 교체
+                                tabIndex = $(this).index();   
+                                $('.intro li').each(function(idx){
+                                    $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_off.png','_on.png'));   
+                                    if(tabIndex != idx) {
+                                        $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_on.png','_off.png'));
+                                    }
+                                });
+                                $('.intro_wrap > div').eq(tabIndex).show().siblings('div').hide();
+                            })
+                        });
+                    </script>
+                </div>
+                <img src="./images/ko/hub/sub/new_pc/reputable.jpg" alt="Your Reputable Partner, Hotel Shilla 이미지">
+                <img src="./images/ko/hub/sub/new_pc/project.jpg" alt="Project Types 이미지">
+                <img src="./images/ko/hub/sub/new_pc/growth.jpg" alt="Growth Journey with Hotel Shilla 이미지">
+                <ul class="btnSet">
+                    <li><a href="#none"><img src="./images/ko/hub/sub/new_pc/intro_btn_01.jpg" alt="문의하기"></a></li>
+                    <li class="last"><a href="#none"><img src="./images/ko/hub/sub/new_pc/intro_btn_02.jpg" alt="PDF 다운로드"></a></li>
+                </ul>
+            </div>
+            <div class="hidden">
+                <h3>호텔 개발</h3>
+                <p>HOTEL DEVELOPMENT</p>
+                <h3>Assurance of the Best in Hospitality</h3>
+                <p>호텔신라는 한국을 대표하는 호텔로서 자부심과 책임감을 가지고 국내 서비스 산업을 선도하고 있습니다. '최고의 호스피탈리티 기업'을 목표로 오랫동안 품위와 전통을 유지하며 고객의 마음을 사로잡아왔습니다. 독보적인 브랜드 가치와 운영 노하우를 바탕으로 차별화된 공간에서 최고 수준의 서비스를 제공하는 데 호텔신라가 함께 하겠습니다.</p>
+                <h3>Global Presence</h3>
+                <p>호텔신라는 국내 17개 호텔을 포함하여 전세계 총 36개 호텔 및 리조트 프로퍼티를 운영 ∙ 개발 중에 있으며, 동남아, 중국, 일본, 미국, 영국, 독일 등에 12개 사업 지점을 보유하며 탄탄한 글로벌 네트워크를 구축하고 있습니다.</p>
+                <ul>
+                    <li>전체</li>
+                    <li>대한민국</li>
+                    <li>아시아</li>
+                    <li>유럽</li>
+                    <li>미국</li>
+                </ul>
+                <h3>Our Brands</h3>
+                <p>호텔신라는 더 신라를 시작으로, 신라모노그램, 신라스테이 등 다양한 고객 경험을 구현하는 폭넓은 브랜드 스펙트럼을 갖추고 있습니다. 고객의 니즈, 파트너사의 조건, 시장 상황을 면밀하게 고려하여 최적의 솔루션을 제안하고, 이를 실현하기 위한 모든 과정을 함께합니다. 클래식부터 모던, 럭셔리에서 캐주얼에 이르기까지 품격과 트렌드를 아우르는 유연하고 수준 높은 서비스를 구현합니다.</p>
+                <ul>
+                    <li>신라호텔</li>
+                    <li>신라모노그램</li>
+                    <li>신라스테이</li>
+                    <li>Midscale</li>
+                </ul>
+                <dl>
+                    <dt>THE SHILLA</dt>
+                    <dd>Authentic Indulgence</dd>
+                    <dd>더 신라는 고객의 삶, 일과 휴식을 아우르는 라이프 스타일 전반에서 최상의 경험을 선사하며 무한한 가능성을 바탕으로 격조 높은 호텔 서비스와 시설을 제안합니다.</dd>
+                    <dt>디자인 컨셉</dt>
+                    <dd>Timeless, Elegant, Luxury</dd>
+                    <dd>신라호텔은 시대를 아우르는 모던함을 모토로 시간이 흐를수록 더욱 빛나는 가치를 담은 디자인을 선보입니다.</dd>
+                    <dt>진출 대상 지역</dt>
+                    <dd>신라호텔은 글로벌 핵심 시장 중 최고의 입지를 선별하여 진출할 계획입니다.</dd>
+                    <dt>브랜드 가이드라인</dt>
+                    <dd>신라호텔은 럭셔리에 걸맞은 풀 서비스와 ADD, 파인 레스토랑, 바&라운지 등 F&B 시설부터 피트니스, 수영장, 스파 등 최고급 부대시설을 필수적으로 제공합니다.</dd>
+                </dl>
+                <dl>
+                    <dt>SHILLA MONOGRAM</dt>
+                    <dd>Signature Sophistication</dd>
+                    <dd>신라모노그램은 위치한 지역, 환경의 특성과 신라만의 세심한 가치를 조화롭게 추구하는 브랜드입니다. 정형화된 방식에서 탈피하여 유연한 서비스와 디자인으로 브랜드 정체성을 구현합니다.</dd>
+                    <dt>디자인 컨셉</dt>
+                    <dd>Refined Contemporary</dd>
+                    <dd>신라모노그램은 더 신라의 절제된 세련미에 신라스테이의 간결함을 더합니다. 품격과 합리성의 완벽한 균형을 지향하며 지역이 가진 고유한 가치를 존중합니다.</dd>
+                    <dt>진출 대상 지역</dt>
+                    <dd>신라모노그램은 주요 관광 국가의 수도 및 유명 휴양지에 우선적으로 진출 고려하며 국내외 성장성이 높은 관광지로도 확장할 계획입니다.</dd>
+                    <dt>브랜드 가이드라인</dt>
+                    <dd>신라모노그램은 어퍼 업스케일에 맞는 풀 서비스부터 ADD, 파인 레스토랑 등 F&B 시설과 피트니스, 수영장 등 부대시설을 필수적으로 제공합니다.</dd>
+                </dl>
+                <dl>
+                    <dt>SHILLA STAY</dt>
+                    <dd>Smarter Stay</dd>
+                    <dd>신라스테이는 엄선된 시설과 서비스를 제공함으로써 개발, 운영, 관리의 효용과 고객의 편의를 동시에 충족합니다.</dd>
+                    <dt>디자인 컨셉</dt>
+                    <dd>Discerning Simplicity</dd>
+                    <dd>신라스테이는 공간의 효용성과 미적 비례를 동시에 추구하여 실용성있고 합리적인 서비스와 상품을 제공합니다.</dd>
+                    <dt>진출 대상 지역</dt>
+                    <dd>신라스테이는 주요 관광 국가의 수도 및 유명 휴양지를 비롯하여 국내외 거점 도시와 관광 및 비즈니스 수요 성장 지역에도 진출할 계획입니다.</dd>
+                    <dt>브랜드 가이드라인</dt>
+                    <dd>신라스테이는 업스케일에 맞는 선별적인 서비스와 입지, 고객의 니즈에 맞는 실용적인 F&B 및 부대시설을 필수적으로 제공합니다</dd>
+                </dl>
+                <h3>Your Reputable Partner, Hotel Shilla</h3>
+                <p>호텔신라는 프리미엄 라이프스타일 전문가로서 높은 품격과 신뢰를 바탕으로 차별화된 가치를 선사합니다.</p>
+                <dl>
+                    <dt>브랜드</dt>
+                    <dd>신뢰와 품격을 상징하는 이름, ‘신라’는 브랜드 파워에 걸맞은 우호적인 사업 환경과 최적의 파트너십을 선사합니다.</dd>
+                    <dt>품질</dt>
+                    <dd>최고 수준의 퀄리티를 자랑하는 신라의 표준 서비스(SOP)는 세세한 부분까지 살피는'Micro-Managing’을 바탕으로 품격 있는 고객 경험을 제공합니다. </dd>
+                    <dt>디자인</dt>
+                    <dd>Peter Remedious, Piero Lissoni, 박선기 등 세기의 건축가 및 디자이너가 구현한 감각적이고 정제된 라이프스타일을 ‘신라’의 공간에 담아냅니다.</dd>
+                    <dt>사람</dt>
+                    <dd>최고의 호텔리어를 양성해온 풍부한 경험을 바탕으로 ‘신라’만의 운영 노하우와 서비스 DNA를 전달합니다.</dd>
+                    <dt>시스템</dt>
+                    <dd>국내 호텔 시장을 이끌어온 경험을 살린 체계적인 개발/관리/운영 노하우와 신라리워즈, 신라 예약 시스템 등 자체 관리 프로그램을 이용하여 안정적 수익구조를 실현합니다.</dd>
+                    <dt>시너지</dt>
+                    <dd>TR 부문의 면세유통 네트워크, SBTM의 기업 출장 서비스 대행, 삼성 관계사 연계 수요 등으로 풍부한 시너지를 만들어 냅니다.</dd>
+                </dl>
+                <h3>Project Types</h3>
+                <p>호텔신라는 호텔 및 리조트를 보유한 전문 경영 회사로서 입지, 비용, 시장 환경 등 프로젝트 성격을 고려한 최적의 개발 형태를 제안합니다.</p>
+                <ul>
+                    <li>신규개발: 신규 개발 부지에 적합한 브랜드를 제안하여 사업성 검토부터 오픈까지, 전 과정을 함께합니다. </li>
+                    <li>리브랜딩: 기존 호텔에 신라의 브랜드, 시설, 디자인, 운영 방식 등을 도입하여 보다 나은 가치를 제공합니다. </li>
+                    <li>컨버전: 오피스, 레지던스 등 일반 건물을 호텔로 전환하여 자산의 운영과 수익에 새로운 방향을 제안합니다.</li>
+                </ul>
+                <h3>Growth Journey with Hotel Shilla</h3>
+                <p>호텔신라는 호텔 경영 및 관리, 기술 지원과 자문 등 풍부한 노하우를 바탕으로 호텔 개관과 운영에 필요한 모든 과정을 함께합니다. 사업 타당성을 검토하고 사전 준비 사항을 철저하게 논의하며, 공간 설계와 인테리어 디자인부터 시공 검수, 안전 점검 등 개발 전 영역에 걸친 컨설팅을 제공함으로써, 안정적이고 지속적인 자산의 수익 모델을 구축합니다. 실제 호텔 운영에 있어 교육/훈련 등 인력 관리부터 세일즈/체인 프로모션 등 마케팅 매니지먼트, 부대시설 기획과 시설 관리, 사업 계획 등 중장기 운영방안까지 주요 사업에 대한 인사이트 와 노하우를 공유합니다. 또한 매출 관리부터 구매 조달 등 전반에 걸친 수준 높은 파이낸셜 매니지먼트를 제공합니다. 신라는 견고하고 실질적인 이윤 구조에 기반한 최고 수준의 파트너십을 약속합니다. </p>
+            </div>
+        </div>
+        <!-- ********************************* 메가존 pc 작업 ********************************************  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="emailAdCollectPop" style="display:none"></div><div id="footerEmailLayer" style="display:none"></div><div class="foot footSeoul">
+            <script type="text/javascript">
+    <!--
+    function insertFooterMailReqr(){
+        
+        if($.trim($('#footerMailReqrNewsEmail').val()) == ""){
+            alert(messages["msg.cmm.required"].replaceMsg(['이메일 ']));
+            $('#footerMailReqrNewsEmail').focus();
+            return;
+        }
+        if(!checkEmailOneFild( $('#footerMailReqrNewsEmail')  )){
+               return;
+        }
+    
+        $("email").val($("#footerMailReqrNewsEmail").val());
+        var footerEmailLayer = $("#footerEmailLayer");
+         var string = $("form[name=footerMailReqrForm]").serialize();
+         $.post( "/mbr/newsletterreqr/countNewsLetterReqr.do", string
+         ).done(function( resultCode ) {
+             if(resultCode == "success"){
+                 $.ajax(
+                         {
+                             url: '/mbr/newsletterreqr/newsLetterPop.do',
+                             type: "post",
+                             data: { "email": $("#footerMailReqrNewsEmail").val() },
+                             dataType: "html",
+                             error: function(){
+                                    alert('조회에 실패하였습니다.');
+                             },
+                             success: function( strData ){
+                                footerEmailLayer.html(strData);
+                                 footerEmailLayer.show();
+                                 $("#footerEmailLayer").attr("tabindex",-1).focus(); 
+                                 //DIV위치 컨트롤영역
+                                 $("#footerMailReqrNewsEmail").val("");
+                                 $('html, body').animate( {scrollTop:0} );
+                             }
+                         }                           
+                  );
+             }else if(resultCode == "newLetterOverlap"){
+                     alert('이미 뉴스레터를 신청하셨습니다.');
+                    return;
+             }else{
+                    alert('생성이 실패하였습니다.');
+                    return;
+             }
+        }).fail(function( jqxhr, textStatus, error ) {
+            alert('생성이 실패하였습니다.');
+        });
+        
+        
+    }
+    //-->
+    
+        function openIdInfo() {
+            var url = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2038143363";
+            window.open(url, "bizCommPop", "width=750, height=700, scrollbars=1");
+        }
+    </script>
+    
+    <div class="localBox">
+        <div class="localBoxer">
+            <div class="compInfo">
+                <h2 class="logo">THE SHILLA SEOUL</h2>
+            </div>
+            <div class="brandWrap">
+                <a href="https://www.shilla.net/index.do" class="brandShilla">THE SHILLA</a>
+                <!-- 20191218 MG -->
+                <a href="https://www.shillamonogram.com/mghub/index.do?lang=ko" class="brandMono">SHILLA MONOGRAM</a>
+                <a href="https://www.shillastay.com//stayhub/index.do" class="brandStay">SHILLA STAY</a>
+            </div>
+            <div class="InfoWrap">
+                <div class="addressInfo">
+                ㈜ 호텔신라 서울특별시 중구 동호로 249</div>
+                <div class="linkInfo">
+                    <dl class="introduction">
+                        <dt class="dt">소개</dt>
+                        <dd class="d1"><a href="https://www.shilla.net/seoul/introduction/aboutShilla.do"><span>호텔소개</span></a></dd>
+                        <dd class="d2"><a href="https://www.shilla.net/seoul/introduction/viewIntroduction.do?contId=FTS"><span>호텔정보</span></a></dd>
+                        <dd class="d3"><a href="https://www.shilla.net/seoul/inquires/hotelMap.do"><span>층별안내도</span></a></dd>
+                        <dd class="d4"><a href="https://www.shilla.net/seoul/inquires/location.do"><span>오시는길</span></a></dd>
+                    </dl>
+                    <dl class="inquiries">
+                        <dt class="dt">고객문의</dt>
+                        <dd class="d1"><a href="https://www.shilla.net/seoul/inquires/contactus.do"><span>연락처</span></a></dd>
+                        <dd class="d2"><a href="https://www.shilla.net/seoul/inquires/faq/listFaq.do"><span>FAQ</span></a></dd>
+                        <dd class="d3"><a href="https://www.shilla.net/membership/inquires/contactus/memSetVoc.do?type=main&amp;lang=ko&amp;propertyId=S"><span>문의하기</span></a></dd>
+                    </dl>
+                </div>
+            </div>
+            <form name="footerMailReqrForm">
+            <input type="hidden" name="FooterHiddenName" id="FooterHiddenId" autocomplete="off">
+           <div class="snsNews">
+                    <dl class="sns">
+                        <dt class="dt">SNS</dt>
+                        <dd class="instagram"><a title="Instagram - popup" target="_blank" href="https://www.instagram.com/theshillaseoul/"><span>Instagram</span></a></dd>
+                             <dd class="facebook"><a title="Facebook - popup" target="_blank" href="http://www.facebook.com/theshillahotels"><span>Facebook</span></a></dd> 
+                             <dd class="post"><a title="Post - popup" target="_blank" href="https://post.naver.com/my.nhn?memberNo=46212769"><span>Post</span></a></dd>
+                             <dd class="weibo"><a target="_blank" href="http://weibo.com/shillahotel" title="Weibo - popup"><span>Weibo</span></a></dd>
+                             <dd class="youtube"><a title="YouTube - popup" target="_blank" href="https://www.youtube.com/@theshillahotelsresorts9834"><span>YouTube</span></a></dd>
+                             <dd class="trip"><a title="Tripadvisor - popup" href="http://www.tripadvisor.co.kr/Hotel_Review-g294197-d301253-Reviews-The_Shilla_Seoul-Seoul.html" target="_blank"><span>Trip advisor</span></a></dd>
+                        </dl>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="linkBox">
+            <ul>
+                <li class="link1 first"><a href="http://www.hotelshilla.net" target="_blank">회사소개</a></li>
+                <li class="link2"><a href="https://www.shilla.net/seoul/footer/siteMap.do">사이트맵</a></li>
+                <li class="link3"><a href="https://www.shilla.net/seoul/footer/individualPolicy.do">개인정보처리방침</a></li>
+                <li class="link4"><a href="https://www.shilla.net/seoul/footer/pop/emailAdCollectPop.do" onclick="openCtrlPopup('https://www.shilla.net/seoul/footer/pop/emailAdCollectPop.do','emailAdCollectPop');  return false;" id="emailAdCollectPopBtn">이메일무단수집금지</a></li>
+                <li class="link5 last"><a href="https://www.shilla.net/seoul/footer/managePolicy.do">영상정보처리기기 운영방침</a></li>
+            </ul>
+        </div>
+        <div class="selectLang">
+            <ul>
+                <li class="en first"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=en">English</a></li>
+                <li class="ja"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=ja">日本語</a></li>
+                <li class="zh last"><a href="https://www.shilla.net/seoul/cmm/setLang.do?lang=zh">简体中文</a></li>
+                </ul>
+        </div>
+        <div class="adressBox">
+            <p>㈜호텔신라 서울특별시 중구 동호로 249(우 : 04605) Tel: 02-2233-3131 Fax; 02-2230-3769 사업자등록번호: 203-81-43363 통신판매신고번호: 중구 00272호 대표이사 이부진 호스팅서비스제공자 삼성SDS㈜객실예약 shilla.reserve@samsung.com</p>
+            <a class="footLinkbtn" href="#" onclick="openIdInfo(); return false;">사업자 정보 확인</a>
+            </div>
+        <div class="copyright">COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</div>
+        <!--180618인증마크 추가-->
+            <div class="certiMark">
+                    <p>Forbes Travel Guide 5성 호텔 선정</p>
+                    <p>한국 능률협회컨설팅 선정 브랜드파워 호텔부문 1위</p>
+                    <p>국가브랜드경쟁력지수 호텔부문 1위</p>
+                    <p>서울환경산업기술원평가 친환경호텔 인증 획득</p>
+                    <p>실내공기질 인증 획득</p>
+                </div>
+            </div>
+    <form name="dataform" id="dataform" action=""></form>
+    <iframe id="hidden_frame" name="hidden_frame" style="display:none" title="빈 프레임"> </iframe></div>
+    
+    </div>
+    
+    
+    
+    <div class="ad-preloads">
+        <img src="https://www.shilla.net/images/upload/photo/150917/FILE3df9f032fdb82a57.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILE3b529a484456ba1d.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/150917/FILE9e7e8ba144103b0.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/150917/FILE813e2526aa27500c.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILE4429fa719dfb3767.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILEfd9350e06f8b8977.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILE130940418ded96ae.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILE6662282a08fce31a.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILEe7ff1869ee4455b2.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILEc1caba1168e8b9ec.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILE31dd50a9c9eebd2a.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/170303/FILE409ff9fafb39bd94.png" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/190624/FILEde9d0e96a43906a7.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILEd802ee3015756c5d.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILEf6ae934b7f494235.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILE34a3431480ba203.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILE60813d40c61f4eb9.jpg" alt="작은이미지">
+        <img src="https://www.shilla.net/images/upload/photo/220722/FILE34d3602550f658d1.jpg" alt="작은이미지">
+    </div>
+        <script type="text/javascript" id="">document.all&&!document.addEventListener||window.proxied_alert||(window.proxied_alert=window.alert,window.alert=function(){var a=arguments[0]?arguments[0]:"null";dataLayer.push({event:"alert_showed",alert_message:a});return proxied_alert.apply(this,arguments)});</script><script type="text/javascript" id="">(function(){if(null==sessionStorage.getItem("_PageViewCounter")||void 0==sessionStorage.getItem("_PageViewCounter"))sessionStorage.setItem("_PageViewCounter",1);else{var f=0;f=parseInt(sessionStorage.getItem("_PageViewCounter"));f+=1;sessionStorage.setItem("_PageViewCounter",f)}var v=!0,l=2592E5;if(window.Storage){var c=JSON.parse(localStorage.getItem("_tab_ids"))||[],d=sessionStorage.getItem("_tab_id"),a=JSON.parse(sessionStorage.getItem("_nav_path")),e=document.location.href;f=!1;var w=document.location.origin,
+    t,p,m,g,u=function(b){return 0===l?b:b.filter(function(h){try{return m=parseInt(h.split("_")[1],10),m>(new Date).getTime()}catch(q){return!1}})};var r=function(b){if(0===l)return b;try{g=b.split("_");m=parseInt(g[1],10);if(m>(new Date).getTime())return b;g=g[0]+"_"+((new Date).getTime()+l);sessionStorage.setItem("_tab_id",g);return g}catch(h){return b}};var x=function(){if(!1===v)return"BACK/FORWARD";if(2>a.length)return"FORWARD";t=a[a.length-2];p=a[a.length-1];return t===e||p===e?"BACK":"FORWARD"},
+    y=function(){c=JSON.parse(localStorage.getItem("_tab_ids"))||[];d=sessionStorage.getItem("_tab_id");c=u(c);if(c.length&&null!==d){var b=c.indexOf(d);-1<b&&c.splice(b,1);localStorage.setItem("_tab_ids",JSON.stringify(c))}},z=function(){var b=(new Date).getTime();"undefined"!==typeof performance&&"function"===typeof performance.now&&(b+=performance.now());return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(h){var q=(b+16*Math.random())%16|0;b=Math.floor(b/16);return("x"===h?q:q&3|
+    8).toString(16)})+(0<l?"_"+((new Date).getTime()+l):"")},A=function(b,h){return!(!0===h&&0!==b&&255!==b)};null===d?(d=z(),f=!0,sessionStorage.setItem("_tab_id",d)):d=r(d);c=u(c);-1===c.indexOf(d)&&(c.push(d),localStorage.setItem("_tab_ids",JSON.stringify(c)));r=c.length;if(window.PerformanceNavigation){a=a||[];var n=window.performance.navigation.redirectCount;if(A(window.performance.navigation.type,f))switch(window.performance.navigation.type){case 0:var k="NAVIGATE";a.push(e);break;case 1:k="RELOAD";
+    0!==a.length&&a[a.length-1]===e||a.push(e);break;case 2:k=x();"FORWARD"===k?-1<document.referrer.indexOf(w)&&a.push(e):"BACK"===k?p!==e&&a.pop():a.push(e);break;default:k="OTHER",a.push(e)}else a.push(e);sessionStorage.setItem("_nav_path",JSON.stringify(a))}window.addEventListener("beforeunload",y);n={tabCount:r,redirectCount:n,navigationType:k,newTab:!0===f?"New":"Existing",tabId:d.replace(/_.+/,"")};window.google_tag_manager[google_tag_manager["GTM-T3LBJ26"].macro(75)].dataLayer.set("browsingBehavior",n);window.dataLayer.push({event:"custom.navigation",
+    browsingBehavior:n})}})();</script>
+    </body><div mx-name="view-image-info"></div></html>
