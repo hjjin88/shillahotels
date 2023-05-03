@@ -601,19 +601,19 @@
                                 <li data-tab="menu4"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_04_off.png" alt="유럽 탭 이미지"></a></li>
                                 <li data-tab="menu5"><a href="#none"><img src="./images/ko/hub/sub/new_pc/tab_05_off.png" alt="미국 탭 이미지"></a></li>
                             </ul>
-                            <div id="menu1" class="HotelDevelopMapTab on">
+                            <div id="menu1" class="MapTab on">
                                 <img src="./images/ko/hub/sub/new_pc/map_01.jpg" alt="신라호텔 전체 지도 이미지">
                             </div>
-                            <div id="menu2" class="HotelDevelopMapTab">
+                            <div id="menu2" class="MapTab">
                                 <img src="./images/ko/hub/sub/new_pc/map_02.jpg" alt="신라호텔 대한민국 지도 이미지">
                             </div>
-                            <div id="menu3" class="HotelDevelopMapTab">
+                            <div id="menu3" class="MapTab">
                                 <img src="./images/ko/hub/sub/new_pc/map_03.jpg" alt="신라호텔 아시아 지도 이미지">
                             </div>
-                            <div id="menu4" class="HotelDevelopMapTab">
+                            <div id="menu4" class="MapTab">
                                 <img src="./images/ko/hub/sub/new_pc/map_04.jpg" alt="신라호텔 유럽 지도 이미지">
                             </div>
-                            <div id="menu5" class="HotelDevelopMapTab">
+                            <div id="menu5" class="MapTab">
                                 <img src="./images/ko/hub/sub/new_pc/map_05.jpg" alt="신라호텔 미국 지도 이미지">
                             </div>
                         </div>
@@ -626,6 +626,7 @@
                         <p>호텔신라는 더 신라를 시작으로, 신라모노그램, 신라스테이 등 다양한 고객 경험을 구현하는 폭넓은 브랜드 스펙트럼을 갖추고 있습니다. 고객의 니즈, 파트너사의 조건, 시장 상황을 면밀하게 고려하여 최적의 솔루션을 제안하고, 이를 실현하기 위한 모든 과정을 함께합니다. 클래식부터 모던, 럭셔리에서 캐주얼에 이르기까지 품격과 트렌드를 아우르는 유연하고 수준 높은 서비스를 구현합니다.</p>
                     </div>
                 </div>
+                <div class="IntroBar"></div>
                 <div class="ShillaSwiper">
                     <div class="MapTabs">
                         <div class="IntroSwiper">
@@ -675,7 +676,7 @@
                                         </dl>
                                     </div>
                                 </div>
-                                <div id="swiper2" class="intro-tab">
+                                <div id="swiper2" class="IntroTab">
                                     <img src="./images/ko/hub/sub/new_pc/mono_01.jpg" alt="신라모노그램 소개 이미지">
                                         <div class="swiper-container">
                                             <div class="swiper mySwiper">
@@ -711,7 +712,7 @@
                                         </dl>
                                     </div>
                                 </div>
-                                <div id="swiper3" class="intro-tab">
+                                <div id="swiper3" class="IntroTab">
                                     <img src="./images/ko/hub/sub/new_pc/stay_01.jpg" alt="신라스테이 소개 이미지">
                                         <div class="swiper-container">
                                             <div class="swiper mySwiper">
@@ -747,7 +748,7 @@
                                         </dl>
                                     </div>
                                 </div>
-                                <div id="swiper4" class="intro-tab">
+                                <div id="swiper4" class="IntroTab">
                                     <img src="./images/ko/hub/sub/new_pc/stay_01.jpg" alt="신라스테이 소개 이미지">
                                         <div class="swiper-container">
                                             <div class="swiper mySwiper">
@@ -794,7 +795,7 @@
                                 $('.MapTabsWrap ul.Tabs li').click(function() {
                                     var activeTab = $(this).attr('data-tab');
                                     $('.MapTabsWrap ul.Tabs li').removeClass('on');
-                                    $('.HotelDevelopMapTab').removeClass('on');
+                                    $('.MapTab').removeClass('on');
                                     $(this).addClass('on');
                                     $('#' + activeTab).addClass('on');
                                     // 탭 이미지 교체

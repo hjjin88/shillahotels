@@ -1,20 +1,20 @@
 .contain.HotelDevelop{padding-top: 0;}
-
+.IntroBar{position: relative;top: 43px;z-index: 1;height: 1px;background: #e5e5e5;}
 .SubVisual{overflow: hidden;position: relative;height: 650px;}
 .SubControl{position: relative;left: 50%;margin: 0 0 0 -960px;width: 1920px;}
 
 .HotelDevelopMap{width: 100%;padding-top: 40px;background: #f7f7f7;}
-.HotelDevelopInfo, .OurBrands, .ShillaSwiper, .HotelDevelopMapTab, .HotelShilla, .Project, .HotelDevelopBtn{position: relative;width: 1200px;margin: auto;}
+.HotelDevelopInfo, .OurBrands, .ShillaSwiper, .MapTab, .HotelShilla, .Project, .HotelDevelopBtn{position: relative;width: 1200px;margin: auto;}
 .HotelShillaList{width: 100%;padding-top: 40px;background: #f7f7f7;background: #f1ead8;}
 .Concept{margin-top: 20px !important;}
 
 .MapTabs .MapTabsWrap{position: relative;}
 .MapTabs .Tabs, .Intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;z-index: 1;}
 .MapTabs .Tabs li:first-child a::before{display: none;}
-.MapTabs .HotelDevelopMapTab, .IntroTab{display: none;}
+.MapTabs .MapTab, .IntroTab{display: none;}
 .MapTabs ul.Tabs li.on a{color: #9d8c78;}
-.MapTabs .HotelDevelopMapTab.on, .IntroTab.on{display: block;}
-.IntroWrap .Intro{position: relative;border-bottom: 1px solid #e5e5e5;}
+.MapTabs .MapTab.on, .IntroTab.on{display: block;}
+.IntroWrap .Intro{position: relative;}
 .IntroWrap .Intro li a {display: flex;}
 .IntroSwiper .swiper-container{padding-bottom: 23px;}
 .IntroSwiper .swiper-pagination{bottom: 0;font-size: 15px;color: #999;text-align: right;}
