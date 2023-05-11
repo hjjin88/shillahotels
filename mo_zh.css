@@ -17,7 +17,7 @@
 .LocationsTable img{width: 18px;}
 .LocationsTable .board_list thead tr{line-height: 22.45px;letter-spacing: -0.18px;color: rgb(119, 119, 119);border-bottom: 5.3px solid rgb(229, 229, 229);padding-bottom: 20px;}
 .LocationsTable .board_list tbody th{height: 100px;padding: 20px 10px;background: #f9f9f9;line-height: 19.87px;letter-spacing: -0.37px;color: rgb(69, 69, 69);text-align: left;}
-.LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-size: 12.5px;text-align: center;}
+.LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;font-weight: 500;word-break: keep-all;font-size: 12.5px;text-align: center;}
 .LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
 .BrandGuidelines dl{padding-bottom: 40px;}
 .HotelShillaList{padding: 0 15px 60px;background: rgb(241, 234, 215);}
@@ -28,7 +28,7 @@
 .Project{padding: 0 15px;}
 .Project dl{padding-bottom: 40px;}
 .ProjectCon ul{display: flex;justify-content: space-around;align-items: center;width: 345px;height: 67px;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
-.ProjectCon ul li{position: relative;margin-left: 30px;padding: 0 30px 0 8px;font-size: 16px;letter-spacing: -0.4px;font-weight: bold;}
+.ProjectCon ul li{position: relative;margin-left: 30px;padding: 0 30px 0 10px;font-size: 16px;letter-spacing: -0.4px;font-weight: bold;}
 .ProjectCon ul li::before{content: '';position: absolute;top: 50%;left: 0;width: 5px;height: 5px;transform: translateY(-50%);margin-right: 10px;background: #454545;}
 .ProjectCon ul li::after{content: '';position: absolute;top: 0;right: 0;transform: translateX(-50%);width: 1.3px;height: 20px;background: rgb(234, 234, 234);}
 .ProjectCon ul li:nth-child(3):after{display: none;}
