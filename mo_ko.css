@@ -154,10 +154,17 @@
 .scrollbar .tabType1 .Intro::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
+.ctnMain .ctnMOffers{
+    padding-bottom: 0;
+}
 .ctnMain .ctnMOffers .swiper-container{
     height: fit-content;
 }
 
 .ctnMain .ctnMOffers .swiper-slide{
-    
+    border:0;
+    margin-bottom: 0;
+}
+.IntroSwiper .swiper-container{
+    padding-bottom: 0px;
 }
