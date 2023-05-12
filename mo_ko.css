@@ -134,7 +134,7 @@
 }
 
 .totalMenu.scrollbar .tabType1 .Intro{
-    overflow: auto;
+    overflow-y: scroll;
     border-bottom:none;
 }
 /* .scrollbar .tabType1 .Intro{-ms-overflow-style:none; }
