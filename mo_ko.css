@@ -49,8 +49,8 @@
 /* .swiper-rtl .swiper-button-prev,
 .IntroSwiper .swiper-button-prev:after,
 .IntroSwiper .swiper-button-next:after{display: none;} */
-.HotelDevelopWrap .Newclearfix{padding: 0 5% 100px;display: flex;justify-content: center;column-gap: 10px;width: 90%;}
-.Newclearfix input.fl, .Newclearfix input.fr{width: 50%;}
+.HotelDevelopWrap .Newclearfix{padding: 0 5% 100px;display: flex;justify-content: center;column-gap: 10px;}
+/* .Newclearfix input.fl, .Newclearfix input.fr{width: 50%;} */
 .Newclearfix:after{display: none;}
 .totalMenu {width: 100%;}
 /* .totalMenu .tabType1{width: 100%;height: fit-content;} */
