@@ -34,32 +34,21 @@
 .sub_tit{padding: 60px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
 .sub_txt{line-height: 22px;color: #222222;text-align: center;word-break: keep-all;}
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
-/* .IntroSwiper .tabType1.swiper-container{padding-bottom: 0px;} */
-/* .totalMenu .tabType1 ul{border-bottom:0 !important;} */
 .IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;}
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
-.IntroSwiper .IntroWrap .Intro{    
-    display: flex;
-    column-gap: 25px;
-    font-size: 15px;
-    justify-content: space-around;
-}
+.IntroSwiper .IntroWrap .Intro{display: flex;width: fit-content;column-gap: 25px;font-size: 15px;}
 .IntroSwiper .IntroWrap .Intro li{width: auto !important;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .IntroSwiper .swiper-button-next{right: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
-/* .swiper-rtl .swiper-button-prev,
-.IntroSwiper .swiper-button-prev:after,
-.IntroSwiper .swiper-button-next:after{display: none;} */
 .HotelDevelopWrap .Newclearfix{padding: 0 5% 100px;display: flex;justify-content: center;column-gap: 10px;}
-/* .Newclearfix input.fl, .Newclearfix input.fr{width: 50%;} */
 .Newclearfix:after{display: none;}
 .totalMenu {width: 100%;}
-/* .totalMenu .tabType1{width: 100%;height: fit-content;} */
 .totalMenu .tabType1 ul li a{font-weight:normal}
 .ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;}
-.ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
+.ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;border-bottom: 1px solid #e6e6e6;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}
+.ctnMain .ctnMOffers .tabType1.swiper-container{}
