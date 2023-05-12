@@ -81,7 +81,7 @@
     word-break: keep-all;
 }
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
-.IntroSwiper .swiper-container{height: fit-content;padding-bottom: 30px;}
+.IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;}
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
@@ -157,14 +157,14 @@
 .ctnMain .ctnMOffers{
     padding-bottom: 0;
 }
-.ctnMain .ctnMOffers .swiper-container{
+.ctnMain .ctnMOffers .tabType1.swiper-container{
     height: fit-content;
 }
 
-.ctnMain .ctnMOffers .swiper-slide{
+.ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{
     border:0;
     margin-bottom: 0;
 }
-.IntroSwiper .swiper-container{
+.IntroSwiper .tabType1.swiper-container{
     padding-bottom: 0px;
 }
