@@ -36,7 +36,9 @@
 /* hidden */
 .hidden table{text-align: left;}
 /* 공통 main.css 푸터부분 수정 css */
+.foot .localBox .linkInfo .introduction dd.d2 a{width: 83px !important;}
 .foot .localBox .linkInfo .introduction dd.d3 a{width: 77px !important;}
+.foot .localBox .linkInfo .introduction dd.d8 a {width: 85px !important;}
 .foot .localBox .linkInfo .introduction{background: url(./images/ko/hub/sub/HublocalBoxLinkInfo.gif) no-repeat 0px 0 !important;}
 
 

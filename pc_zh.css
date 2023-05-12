@@ -37,9 +37,10 @@
 table{text-align: left;}
 /* 공통 main.css 푸터부분 수정 css */
 .foot .localBox .linkInfo .introduction dd{margin: 0 !important;}
-.foot .localBox .linkInfo .introduction dd.d3 a{width: 80px !important;}
-.foot .localBox .linkInfo .introduction dd.d8 a{width: 130px !important;}
-.foot .localBox .linkInfo .introduction{background: url(./images/zh/hub/sub/HublocalBoxLinkInfo.gif) no-repeat 0px 0 !important;width: 406px !important;left: 438px !important;top: 46px !important;height: 13px !important;}
+.foot .localBox .linkInfo .introduction dd.d2 a{width: 82px !important;}
+.foot .localBox .linkInfo .introduction dd.d3 a{width: 90px !important;}
+.foot .localBox .linkInfo .introduction dd.d8 a{width: 85px !important;}
+.foot .localBox .linkInfo .introduction{background: url(./images/zh/hub/sub/HublocalBoxLinkInfo.gif) no-repeat 0px 0 !important;width: 370px !important;left: 438px !important;top: 46px !important;height: 13px !important;}
 .foot .localBox .linkInfo .inquiries::before{content: '';width: 1px;height: 50px;background: #e8e3ce;position: absolute;top: 6px;left: -30px;}
 .foot .localBox .linkInfo .ContactInfo{width: 410px !important;}
 .foot .localBox .linkInfo .ContactInfo::after{content: '';width: 1px;height: 50px;background: #e8e3ce;position: absolute;top: 0;right: 0;}

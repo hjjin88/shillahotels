@@ -171,3 +171,7 @@
 .totalMenu .tabType1 ul{
     border-bottom:0 !important;
 }
+
+.ctnMain .ctnMOffers{
+border-bottom: 1px solid #e6e6e6 !important;
+}
