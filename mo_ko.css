@@ -95,7 +95,7 @@
 }
 .IntroSwiper .IntroWrap .Intro li{
     /* width: 25%; */
-    width: fit-content;
+    width: fit-content !important;
     flex-shrink: 0;
 }
 
