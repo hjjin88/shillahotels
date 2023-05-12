@@ -38,7 +38,7 @@
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
-.IntroSwiper .IntroWrap .Intro{display: flex;width: fit-content;column-gap: 25px;font-size: 15px;}
+.IntroSwiper .IntroWrap .Intro{display: flex;width: fit-content;column-gap: 25px;font-size: 15px;border: 0;top: -1px;z-index: 1;background: transparent;}
 .IntroSwiper .IntroWrap .Intro li{width: auto !important;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
@@ -50,4 +50,5 @@
 .totalMenu .tabType1 ul li a{font-weight:normal}
 .ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;}
 .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
+.ctnMain .ctnMOffers .tabType1.swiper-container::after {content: '';background: #e6e6e6;position: absolute;bottom: 0px;left: 0;width: 100%;height: 1px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}

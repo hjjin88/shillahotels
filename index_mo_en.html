@@ -2928,7 +2928,7 @@
                                     </dd>
                                 </dl>
                             </div>
-							<div class="swiper-container">
+							<div class="IntroTabContainer swiper-container">
 								<div class="swiper-wrapper" >
 									<div class="swiper-slide">
 										<img src="./images/en/hub/sub/new_pc/shilla_swiper1.jpg" alt="Shilla images">
@@ -3051,7 +3051,7 @@
                                     </dd>
                                 </dl>
                             </div>
-							<div class="swiper-container">
+							<div class="IntroTabContainer swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="./images/en/hub/sub/new_pc/mono_swiper1.jpg" alt="Shilla Monogram images">
@@ -3173,7 +3173,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <div class="swiper-container">
+                            <div class="IntroTabContainer swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="./images/en/hub/sub/new_pc/stay_swiper1.jpg" alt="Shilla Stay images">
@@ -3286,22 +3286,18 @@
 							<!-- 내용 미정 -->
 						</div>
 					</div>
-					<!-- <script>
-						var swiper = new Swiper('.swiper-container', {
-							pagination: {
-							el: ".swiper-pagination",
-							type: "fraction",
-							},
-							navigation: {
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev",
-							},
-							loop: true,
-							spaceBetween: 10,
-						});
-					</script> -->
 				</div>
 				<script>
+                    var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+                        pagination: ".IntroTabContainer .swiper-pagination",
+                        paginationType: "fraction",
+                        nextButton: ".IntroTabContainer .swiper-button-next",
+                        prevButton: ".IntroTabContainer .swiper-button-prev",
+                        loop: true,
+                        slidesPerView : "auto",
+                        centeredSlides: true, 
+                    });
+                    console.dir(imgCarouselSwiper);
 					// swiper
 					$(function() {
 						$('.IntroWrap ul.Intro li').click(function() {
