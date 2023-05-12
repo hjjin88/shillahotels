@@ -11,7 +11,6 @@
 .ShillaSwiper-inner-01{padding-bottom: 40px;}
 .ShillaSwiper-inner-02 dl:nth-of-type(2){padding-bottom: 40px;}
 .ShillaSwiper-inner-02 dt:nth-of-type(2){padding-bottom: 20px;}
-
 .LocationsTable{width: 345px;margin: 0 auto;text-align: center;}
 .LocationsTable table{border-spacing: 0;}
 .LocationsTable img{width: 18px;}
@@ -43,7 +42,7 @@
 .IntroSwiper .swiper-pagination-total{color: #999;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
-.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 15px;font-size: 15px;}
+.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 20px;font-size: 15px;}
 .IntroSwiper .IntroWrap .Intro li{width: fit-content !important;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .IntroSwiper .swiper-button-next{right: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
