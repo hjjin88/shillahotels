@@ -2678,6 +2678,7 @@
     <!-- test css -->
     <link href="./mo_ko.css" rel="stylesheet" type="text/css">
 
+    <!-- 컨텐츠 -->
 	<div class="HotelDevelop">
 		<div class="headTit">
 			<h2 class="tit">HOTEL DEVELOPMENT</h2>
@@ -2996,7 +2997,7 @@
                                             <tr>
                                                 <th scope="col">&nbsp;</th>
                                                 <th scope="col">핵심지역</th>
-                                                <th scope="col">핵심 인근 지역</th>
+                                                <th scope="col">핵심&nbsp;인근&nbsp;지역</th>
                                                 <th scope="col">그 외</th>
                                             </tr>
                                         </thead>
@@ -3161,19 +3162,17 @@
 							<!-- 내용 미정 -->
 						</div>
 					</div>
-					<script>
-						var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
-							pagination: ".IntroTabContainer .swiper-pagination",
-                            paginationType: "fraction",
-							nextButton: ".swiper-button-next",
-                            prevButton: ".swiper-button-prev",
-							loop: true,
-							spaceBetween: 10,
-						});
-                        console.dir(imgCarouselSwiper);
-					</script>
 				</div>
 				<script>
+                    var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+                        pagination: ".IntroTabContainer .swiper-pagination",
+                        paginationType: "fraction",
+                        nextButton: ".IntroTabContainer .swiper-button-next",
+                        prevButton: ".IntroTabContainer .swiper-button-prev",
+                        // loop: true,
+                        // spaceBetween: 10,
+                    });
+                    console.dir(imgCarouselSwiper);
 					// swiper
 					$(function() {
 						$('.IntroWrap ul.Intro li').click(function() {
