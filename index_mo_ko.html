@@ -2968,28 +2968,13 @@
                             </div>
                         </div>
                     </div>
-<script>
-    var swiperSpecial = new Swiper('.ctnMOffers .tabType1.swiper-container', {
-    // scrollbar: '.swiper-scrollbar',
-    // scrollbarHide: true,
-    // initialSlide: 1,
-    // slidesPerView: '3',
-    // slidesPerView : 'auto',
-    // centeredSlides: '1',
-    // spaceBetween: 0,
-    // grabCursor: true,
-    // loop : false,
-    // resistance : false,
-    // slidesPerView : 'auto', 
-    // slidesOffsetAfter:'20',
-    loop : false,
-    slidesPerView : 'auto',
-    // slideToClickedSlide : true,
-    // watchOverflow : true ,
-    
-});
-  </script>
-
+                    <script>
+                        var swiper = new Swiper(".tabtestSwiper", {
+                            slidesPerView: 3,
+                            spaceBetween: 0,
+                            freeMode: true,
+                        });
+                    </script>
                         <div id="swiper1" class="IntroTab on">
                             <div class="ShillaSwiper-inner-01">
                                 <dl>
@@ -3039,7 +3024,6 @@
                                         최고의 입지를 선별하여 진출할 계획입니다.
                                     </dd>
                                 </dl>
-                                <!-- <img src="./images/ko/hub/sub/new_mo/shilla_mo_01.png" alt="진출 대상 지역 이미지"> -->
                                 <div class="LocationsTable">
                                     <table class="board_list">
                                         <caption>진출 대상 지역 테이블</caption>
@@ -3329,11 +3313,9 @@
 						</div>
 					</div>
 					<script>
-						var swiper = new Swiper('.IntroTabContainer', {
-							pagination: {
-							el: ".swiper-pagination",
-							type: "fraction",
-							},
+						var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+							pagination: ".IntroTabContainer .swiper-pagination",
+                            paginationType: "fraction",
 							navigation: {
 							nextEl: ".swiper-button-next",
 							prevEl: ".swiper-button-prev",
@@ -3341,6 +3323,7 @@
 							loop: true,
 							spaceBetween: 10,
 						});
+                        console.dir(imgCarouselSwiper);
 					</script>
 				</div>
 				<script>
