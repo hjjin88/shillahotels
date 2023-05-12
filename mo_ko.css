@@ -27,14 +27,59 @@
 .HotelShillaList dt, .Growth dt{line-height: 24px;}
 .Project{padding: 0 15px;}
 .Project dl{padding-bottom: 40px;}
-.ProjectCon ul{display: flex;justify-content: space-around;align-items: center;width: 345px;height: 67px;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
-.ProjectCon ul li{position: relative;margin-left: 30px;padding: 0 30px 0 10px;font-size: 16px;letter-spacing: -0.4px;font-weight: bold;}
-.ProjectCon ul li::before{content: '';position: absolute;top: 50%;left: 0;width: 5px;height: 5px;transform: translateY(-50%);margin-right: 10px;background: #454545;}
-.ProjectCon ul li::after{content: '';position: absolute;top: 0;right: 0;transform: translateX(-50%);width: 1.3px;height: 20px;background: rgb(234, 234, 234);}
+.ProjectCon ul{
+    /* display: flex;justify-content: space-around;align-items: center;width: 345px;
+    height: 67px;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);
+    border-bottom: 1.3px solid rgb(234, 234, 234); */
+    display: flex;
+    align-items: center;
+    max-width: 345px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-top: 1.3px solid rgb(234, 234, 234);
+    border-bottom: 1.3px solid rgb(234, 234, 234);
+    justify-content: center;
+}
+.ProjectCon ul li{
+    /* position: relative;margin-left: 30px;padding: 0 30px 0 10px;
+    font-size: 16px;letter-spacing: -0.4px;font-weight: bold; */
+    position: relative;
+    margin: 5% 0;
+    padding: 0 10%;
+    font-weight: bold;
+    flex: 1 1 auto;
+    /* overflow: inherit; */
+}
+/* .ProjectCon ul li::before{content: '';position: absolute;top: 50%;left: 0;width: 5px;height: 5px;transform: translateY(-50%);margin-right: 10px;background: #454545;} */
+.ProjectCon ul li::after{
+    /* content: '';position: absolute;
+    top: 0;right: 0;transform: translateX(-50%);
+    width: 1.3px;height: 20px;background: rgb(234, 234, 234); */
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.3px;
+    height: 20px;
+    background: rgb(234, 234, 234);
+}
 .ProjectCon ul li:nth-child(3):after{display: none;}
 .Growth{padding: 0 15px 40px;}
-.sub_tit{padding: 60px 0 15px;font-size: 20px;font-weight: bold;line-height: 15px;color: rgb(34, 34, 34);letter-spacing: -0.4px;word-spacing: -0.6px;}
-.sub_txt{font-size: 16px;line-height: 24px;letter-spacing:-0.6px;word-spacing: 0.6px;color: rgb(102, 102, 102);}
+.sub_tit{
+    padding: 60px 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #222222;
+    text-align: center;
+}
+.sub_txt{
+    line-height: 22px;
+    color: #222222;
+    text-align: center;
+    word-break: keep-all;
+}
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
 .IntroSwiper .swiper-container{height: fit-content;padding-bottom: 30px;}
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
@@ -42,13 +87,24 @@
 .IntroSwiper .swiper-pagination-total{color: #999;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
-.IntroSwiper .IntroWrap .Intro li a{display: flex;align-items: center;justify-content: center;text-decoration: none;padding:0;font-weight: 600;line-height: 1.1;}
+.IntroSwiper .IntroWrap .Intro li a{font-size: 15px;display: flex;align-items: center;justify-content: center;text-decoration: none;padding:0;font-weight: 600;line-height: 1.1;}
 .IntroSwiper .IntroWrap .Intro li.on  a{color: rgb(123, 100, 78);border-bottom: 2px solid #83766e;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .IntroSwiper .swiper-button-next{right: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
 .swiper-rtl .swiper-button-prev,
 .IntroSwiper .swiper-button-prev:after,
 .IntroSwiper .swiper-button-next:after{display: none;}
-.HotelDevelopWrap .confirmBox{padding: 0 15px 100px;}
+.HotelDevelopWrap .Newclearfix{
+    padding: 0 5% 100px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    width: 90%;
+}
+.Newclearfix input.fl, .Newclearfix input.fr{
+    width: 50%;
+}
 
-
+.Newclearfix:after{
+    display: none;
+}
