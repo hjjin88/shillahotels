@@ -3259,30 +3259,26 @@
 							<!-- 내용 미정 -->
 						</div>
 					</div>
-					<script>
-						var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
-							pagination: ".IntroTabContainer .swiper-pagination",
+                    <script>
+                        var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+                            pagination: ".IntroTabContainer .swiper-pagination",
                             paginationType: "fraction",
-							nextButton: ".IntroTabContainer .swiper-button-next",
+                            nextButton: ".IntroTabContainer .swiper-button-next",
                             prevButton: ".IntroTabContainer .swiper-button-prev",
-							loop: true,
-							spaceBetween: 10,
-						});
+                            slidesPerView : "auto",
+                        });
                         console.dir(imgCarouselSwiper);
-					</script>
-				</div>
-				<script>
-					// swiper
-					$(function() {
-						$('.IntroWrap ul.Intro li').click(function() {
-							var activeTab = $(this).attr('data-tab');
-							$('.IntroWrap ul.Intro li').removeClass('on');
-							$('.IntroTab').removeClass('on');
-							$(this).addClass('on');
-							$('#' + activeTab).addClass('on');
-						})
-					});
-				</script>
+                        // swiper
+                        $(function() {
+                            $('.IntroWrap ul.Intro li').click(function() {
+                                var activeTab = $(this).attr('data-tab');
+                                $('.IntroWrap ul.Intro li').removeClass('on');
+                                $('.IntroTab').removeClass('on');
+                                $(this).addClass('on');
+                                $('#' + activeTab).addClass('on');
+                            })
+                        });
+                    </script>
 			</div>
             <div class="gap"></div>
 			<div class="HotelShillaList">
