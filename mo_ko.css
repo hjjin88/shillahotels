@@ -40,10 +40,15 @@
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
+.IntroSwiper .IntroWrap .Intro{    
+    display: flex;
+    column-gap: 25px;
+    font-size: 15px;
+    justify-content: space-around;
+}
+.IntroSwiper .IntroWrap .Intro li{width: auto !important;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
-.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 20px;font-size: 15px;}
-.IntroSwiper .IntroWrap .Intro li{width: fit-content !important;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .IntroSwiper .swiper-button-next{right: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
 /* .swiper-rtl .swiper-button-prev,
@@ -55,6 +60,6 @@
 .totalMenu {width: 100%;}
 /* .totalMenu .tabType1{width: 100%;height: fit-content;} */
 .totalMenu .tabType1 ul li a{font-weight:normal}
-.ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;border-bottom: 1px solid #e6e6e6 !important;}
+.ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;}
 .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}
