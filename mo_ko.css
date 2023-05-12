@@ -87,8 +87,18 @@
 .IntroSwiper .swiper-pagination-total{color: #999;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
-.IntroSwiper .IntroWrap .Intro{display: flex;gap: 15px;}
-.IntroSwiper .IntroWrap .Intro li{width: 25%;}
+.IntroSwiper .IntroWrap .Intro{
+    display: flex;
+    gap: 15px;
+    /* height: auto; */
+
+}
+.IntroSwiper .IntroWrap .Intro li{
+    /* width: 25%; */
+    width: fit-content;
+    flex-shrink: 0;
+}
+
 .IntroSwiper .IntroWrap .Intro li.on a{
     display: inline-block;
 }
@@ -112,4 +122,34 @@
 
 .Newclearfix:after{
     display: none;
+}
+.totalMenu {
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+.totalMenu .tabType1{
+    width: 100%;
+    /* overflow: auto; */
+    height: fit-content;
+}
+
+.totalMenu.scrollbar .tabType1 .Intro{
+    overflow: auto;
+    border-bottom:none;
+}
+/* .scrollbar .tabType1 .Intro{-ms-overflow-style:none; }
+.scrollbar .tabType1 .Intro::-webkit-scrollbar { display:none; } */
+
+.scrollbar .tabType1 .Intro {
+    /* width: 200px; 
+    height: 200px;
+    background-color:skyblue; */
+    overflow-y: scroll;
+
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.scrollbar .tabType1 .Intro::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
