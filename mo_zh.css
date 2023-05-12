@@ -52,3 +52,61 @@
 .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container::after {content: '';background: #e6e6e6;position: absolute;bottom: 0px;left: 0;width: 100%;height: 1px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}
+
+.IntroTabCon{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.IntroTabCon .img-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+ .IntroTabCon .img-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    flex: 0 0 100vw;
+  }
+.IntroTabCon .prev-button,
+.IntroTabCon .next-button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 55px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  .IntroTabCon .next-button{
+    left: auto;
+    right: 0;
+    background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;
+    background-size: 30px 55px;  
+}
+  .IntroTabCon .prev-button{
+    right: auto;
+    left: 0;
+    background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;
+    background-size: 30px 55px;  
+}
+.IntroTabCon  .slide-info {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1;
+  }
+  .IntroTabCon .slide-info .current-slide,
+  .IntroTabCon .slide-info .separator,
+  .IntroTabCon .slide-info .total-slides {
+  display: inline-block;
+  color: #999;
+  }
+  .IntroTabCon .slide-info .current-slide {
+  color: #101010;
+  }
+  
+  .IntroTabCon .slide-info .separator {
+  margin: 0 5px;
+  }
+

@@ -2919,7 +2919,26 @@
                                     </dd>
                                 </dl>
                             </div>
-							<div class="IntroTabContainer swiper-container">
+                            <div class="IntroTabCon">
+                                <div class="img-slider">
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper1.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper2.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper3.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper1.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper2.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper1.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper2.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper3.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper1.jpg" alt="The Shilla images"></div>
+                                    <div class="img-slide"><img src="./images/zh/hub/sub/new_pc/shilla_swiper2.jpg" alt="The Shilla images"></div>
+                                  </div>
+                                  <button class="prev-button"></button>
+                                  <button class="next-button"></button>
+                                  <div class="slide-info"></div>
+                            </div>
+
+                              
+							<!-- <div class="IntroTabContainer swiper-container">
 								<div class="swiper-wrapper" >
 									<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev">
 										<img src="./images/zh/hub/sub/new_pc/shilla_swiper1.jpg" alt="The Shilla images">
@@ -2937,7 +2956,7 @@
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-pagination"></div>
-							</div>
+							</div> -->
                             <div class="ShillaSwiper-inner-02">
                                 <dl>
                                     <dt class="sub_tit">Design Concept</dt>
@@ -3260,15 +3279,54 @@
 						</div>
 					</div>
                     <script>
-                        var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
-                            pagination: ".IntroTabContainer .swiper-pagination",
-                            paginationType: "fraction",
-                            nextButton: ".IntroTabContainer .swiper-button-next",
-                            prevButton: ".IntroTabContainer .swiper-button-prev",
-                            loop: true,
-                            slidesPerView : "auto",
-                        });
-                        console.dir(imgCarouselSwiper);
+                        // var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+                        //     pagination: ".IntroTabContainer .swiper-pagination",
+                        //     paginationType: "fraction",
+                        //     nextButton: ".IntroTabContainer .swiper-button-next",
+                        //     prevButton: ".IntroTabContainer .swiper-button-prev",
+                        //     loop: true,
+                        //     slidesPerView : "auto",
+                        // });
+                        // console.dir(imgCarouselSwiper);
+                        var slider = document.querySelector('.img-slider');
+                        var slides = Array.from(document.querySelectorAll('.img-slide'));
+                        var prevButton = document.querySelector('.prev-button');
+                        var nextButton = document.querySelector('.next-button');
+                        var slideInfo = document.querySelector('.slide-info');
+                        var slideWidth = slides[0].offsetWidth;
+                        var currentIndex = 0;
+                        function showSlide(index) {
+                        var offset = index * slideWidth * -1;
+                        slider.style.transform = 'translateX(' + offset + 'px)';
+                        }
+                        function updateSlideInfo() {
+                        var currentSlide = currentIndex + 1;
+                        var totalSlides = slides.length;
+                        slideInfo.innerHTML = '<span class="current-slide">' + currentSlide + '</span>' +
+                                                '<span class="separator">/</span>' +
+                                                '<span class="total-slides">' + totalSlides + '</span>';
+                        }
+                        function slidePrev() {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                        } else {
+                            currentIndex = slides.length - 1;
+                        }
+                        showSlide(currentIndex);
+                        updateSlideInfo();
+                        }
+                        function slideNext() {
+                        if (currentIndex < slides.length - 1) {
+                            currentIndex++;
+                        } else {
+                            currentIndex = 0;
+                        }
+                        showSlide(currentIndex);
+                        updateSlideInfo();
+                        }
+                        prevButton.addEventListener('click', slidePrev);
+                        nextButton.addEventListener('click', slideNext);
+                        updateSlideInfo();
                         // swiper
                         $(function() {
                             $('.IntroWrap ul.Intro li').click(function() {
