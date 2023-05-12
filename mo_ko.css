@@ -125,7 +125,7 @@
 }
 .totalMenu {
     width: 100%;
-    border-bottom: 1px solid #e6e6e6;
+    /* border-bottom: 1px solid #e6e6e6; */
 }
 .totalMenu .tabType1{
     width: 100%;
@@ -167,4 +167,7 @@
 }
 .IntroSwiper .tabType1.swiper-container{
     padding-bottom: 0px;
+}
+.totalMenu .tabType1 ul{
+    border-bottom:0 !important;
 }
