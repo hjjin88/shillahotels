@@ -3014,29 +3014,31 @@
                     </ul>
                 </div>
         <!-- </div> -->
-        <script>
-            // var swiper = new Swiper(".mySwiper.tabType1", {
-            //     loop : false,
-            // //   scrollbar: {
-            // //     el: ".swiper-scrollbar",
-            // //     hide: true,
-            // //   },
-            // });
 
-
-            var swiperSpecial = new Swiper('.ctnMOffers .swiper-container', {
-            // scrollbar: '.swiper-scrollbar',
-            scrollbarHide: true,
-            slidesPerView: '3',
-            centeredSlides: false,
-            spaceBetween: 0,
-            grabCursor: true,
-            loop : false,
-        });
-          </script>
     </div>
 </div>
-						<div id="swiper1" class="IntroTab on">
+<script>
+    // var swiper = new Swiper(".mySwiper.tabType1", {
+    //     loop : false,
+    // //   scrollbar: {
+    // //     el: ".swiper-scrollbar",
+    // //     hide: true,
+    // //   },
+    // });
+
+
+    var swiperSpecial = new Swiper('.ctnMOffers .tabType1.swiper-container', {
+    // scrollbar: '.swiper-scrollbar',
+    scrollbarHide: true,
+    slidesPerView: '3',
+    centeredSlides: true, 
+    spaceBetween: 0,
+    grabCursor: false,
+    loop : false,
+});
+  </script>
+
+<div id="swiper1" class="IntroTab on">
                             <div class="ShillaSwiper-inner-01">
                                 <dl>
                                     <dt class="sub_tit">The Shilla</dt>
@@ -3049,7 +3051,7 @@
                                     </dd>
                                 </dl>
                             </div>
-							<div class="swiper-container">
+							<div class="IntroTabContainer swiper-container">
 								<div class="swiper-wrapper" >
 									<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev">
 										<img src="./images/ko/hub/sub/new_pc/shilla_swiper1.jpg" alt="신라호텔 이미지">
@@ -3375,7 +3377,7 @@
 						</div>
 					</div>
 					<script>
-						var swiper = new Swiper('.swiper-container', {
+						var swiper = new Swiper('.IntroTabContainer', {
 							pagination: {
 							el: ".swiper-pagination",
 							type: "fraction",
