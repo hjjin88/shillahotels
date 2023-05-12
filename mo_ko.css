@@ -49,8 +49,8 @@
 .IntroSwiper .IntroWrap .Intro li{width: auto !important;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
-.IntroSwiper .swiper-button-prev{left: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
-.IntroSwiper .swiper-button-next{right: 0;top: 45%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
+.IntroSwiper .swiper-button-prev{left: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
+.IntroSwiper .swiper-button-next{right: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
 /* .swiper-rtl .swiper-button-prev,
 .IntroSwiper .swiper-button-prev:after,
 .IntroSwiper .swiper-button-next:after{display: none;} */
