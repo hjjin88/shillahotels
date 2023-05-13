@@ -3165,8 +3165,11 @@
                         prevButton: ".IntroTabContainer .swiper-button-prev",
                         loop: true,
                         slidesPerView : "auto",
+                        observer: true,	
+                        observeParents: true,	
                     });
                     console.dir(imgCarouselSwiper);
+
 					// swiper
 					$(function() {
 						$('.IntroWrap ul.Intro li').click(function() {
