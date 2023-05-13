@@ -14,10 +14,11 @@
 .LocationsTable{width: 345px;margin: 0 auto;text-align: center;}
 .LocationsTable table{border-spacing: 0;}
 .LocationsTable img{width: 18px;}
-.LocationsTable .board_list thead tr{line-height: 22.45px;letter-spacing: -0.18px;color: rgb(119, 119, 119);border-bottom: 5.3px solid rgb(229, 229, 229);padding-bottom: 20px;}
-.LocationsTable .board_list tbody th{height: 100px;padding: 20px 10px;background: #f9f9f9;line-height: 19.87px;letter-spacing: -0.37px;color: rgb(69, 69, 69);text-align: left;}
+.LocationsTable .board_list thead tr{line-height: 22.45px;letter-spacing: -0.18px;color: rgb(119, 119, 119);padding-bottom: 20px;}
+.LocationsTable .board_list tbody th{height: 120px;padding: 20px 10px;background: #f9f9f9;line-height: 19.87px;letter-spacing: -0.37px;color: rgb(69, 69, 69);text-align: left;}
 .LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-weight: 500;font-size: 12.5px;text-align: center;}
 .LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
+.LocationsTable .board_list tr.last th, .LocationsTable .board_list tr.last td{border-bottom: 3px solid rgb(229, 229, 229);}
 .BrandGuidelines dl{padding-bottom: 40px;}
 .HotelShillaList{padding: 0 15px 60px;background: rgb(241, 234, 215);}
 .HotelShillaList dl{padding-bottom: 40px;}
@@ -27,7 +28,7 @@
 .Project{padding: 0 15px;}
 .Project dl{padding-bottom: 40px;}
 .ProjectCon ul{display: flex;justify-content: center;align-items: center;max-width: 345px;width: 100%;height: auto;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
-.ProjectCon ul li{position: relative;margin: 5% 0;padding: 0 10%;font-weight: bold;flex: 1 1 auto;}
+.ProjectCon ul li{position: relative;margin: 5% 0;padding: 0 5%;font-weight: bold;flex: 1 1 auto;}
 .ProjectCon ul li::after{content: '';position: absolute;top: 0;right: 0;width: 1.3px;height: 20px;background: rgb(234, 234, 234);}
 .ProjectCon ul li:nth-child(3):after{display: none;}
 .Growth{padding: 0 15px 40px;}
