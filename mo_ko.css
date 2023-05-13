@@ -18,6 +18,7 @@
 .LocationsTable .board_list tbody th{height: 100px;padding: 20px 10px;background: #f9f9f9;line-height: 19.87px;letter-spacing: -0.37px;color: rgb(69, 69, 69);text-align: left;}
 .LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-weight: 500;font-size: 12.5px;text-align: center;}
 .LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
+.LocationsTable .board_list tr.last th, .LocationsTable .board_list tr.last td{border-bottom: 3px solid rgb(229, 229, 229);}
 .BrandGuidelines dl{padding-bottom: 40px;}
 .HotelShillaList{padding: 0 15px 60px;background: rgb(241, 234, 215);}
 .HotelShillaList dl{padding-bottom: 40px;}
