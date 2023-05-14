@@ -27,9 +27,9 @@
 .HotelShillaList dt, .Growth dt{line-height: 24px;}
 .Project{padding: 0 15px;}
 .Project dl{padding-bottom: 40px;}
-.ProjectCon ul{display: flex;justify-content: center;align-items: center;max-width: 345px;width: 100%;height: auto;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
-.ProjectCon ul li{position: relative;margin: 5% 0;padding: 0 10%;font-weight: bold;flex: 1 1 auto;}
-.ProjectCon ul li::after{content: '';position: absolute;top: 0;right: 0;width: 1.3px;height: 20px;background: rgb(234, 234, 234);}
+.ProjectCon ul{display: flex;justify-content: center;align-items: center;max-width: 290px;width: 100%;height: auto;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
+.ProjectCon ul li{position: relative;margin: 26px 0;padding: 0 17px;font-weight: bold;}
+.ProjectCon ul li::after{content: '';position: absolute;top: 50%;transform: translateY(-50%);right: 0;width: 1.3px;height: 15px;background: rgb(234, 234, 234);}
 .ProjectCon ul li:nth-child(3):after{display: none;}
 .Growth{padding: 0 15px 40px;}
 .sub_tit{padding: 60px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
@@ -53,61 +53,3 @@
 .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container::after {content: '';background: #e6e6e6;position: absolute;bottom: 0px;left: 0;width: 100%;height: 1px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}
-
-/* .IntroTabCon{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-.IntroTabCon .img-slider {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  
- .IntroTabCon .img-slide {
-    flex: 0 0 100%;
-    width: 100%;
-    flex: 0 0 100vw;
-  }
-.IntroTabCon .prev-button,
-.IntroTabCon .next-button {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 55px !important;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-  }
-  .IntroTabCon .next-button{
-    left: auto;
-    right: 0;
-    background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;
-    background-size: 30px 55px;  
-}
-  .IntroTabCon .prev-button{
-    right: auto;
-    left: 0;
-    background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;
-    background-size: 30px 55px;  
-}
-.IntroTabCon  .slide-info {
-    text-align: center;
-    margin-top: 10px;
-    line-height: 1;
-  }
-  .IntroTabCon .slide-info .current-slide,
-  .IntroTabCon .slide-info .separator,
-  .IntroTabCon .slide-info .total-slides {
-  display: inline-block;
-  color: #999;
-  }
-  .IntroTabCon .slide-info .current-slide {
-  color: #101010;
-  }
-  
-  .IntroTabCon .slide-info .separator {
-  margin: 0 5px;
-  } */
-
