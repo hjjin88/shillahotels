@@ -1,0 +1,98 @@
+.HotelDevelopWrap {text-align: center;word-break: keep-all;}
+.HotelDevelopWrap img{max-width: 100%;}
+.SubControl{display: block;width: 100%;}
+.HotelDevelopInfo{padding: 0 15px;}
+.HotelDevelopInfo_02{padding-bottom: 60px;}
+.HotelDevelopMap{width: 100%;background: #f7f7f7;}
+.OurBrands{padding: 0 15px 60px;}
+.OurBrands dl{padding-bottom: 40px;}
+.ShillaSwiper{padding: 15px 0 60px;}
+.ShillaSwiper-inner-01 dt, .ShillaSwiper-inner-02 dl:nth-of-type(1) dt{padding-bottom: 0;}
+.ShillaSwiper-inner-01{padding: 0 15px 40px;}
+.ShillaSwiper-inner-02{padding: 0 15px;}
+.BrandGuidelines{padding: 0 15px;}
+.ShillaSwiper-inner-02 dl:nth-of-type(2){padding-bottom: 40px;}
+.ShillaSwiper-inner-02 dt:nth-of-type(2){padding-bottom: 20px;}
+.LocationsTable{width: 345px;margin: 0 auto;text-align: center;}
+.LocationsTable table{border-spacing: 0;}
+.LocationsTable img{width: 18px;}
+.LocationsTable .board_list thead tr{line-height: 22.45px;letter-spacing: -0.18px;color: rgb(119, 119, 119);border-bottom: 5.3px solid rgb(229, 229, 229);padding-bottom: 20px;}
+.LocationsTable .board_list tbody th{height: 100px;padding: 20px 10px;background: #f9f9f9;line-height: 19.87px;letter-spacing: -0.37px;color: rgb(69, 69, 69);text-align: left;}
+.LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-weight: 500;font-size: 12.5px;text-align: center;}
+.LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
+.LocationsTable .board_list tr.last th, .LocationsTable .board_list tr.last td{border-bottom: 3px solid rgb(229, 229, 229);}
+.BrandGuidelines dl{padding-bottom: 40px;}
+.HotelShillaList{padding: 0 15px 60px;background: rgb(241, 234, 215);}
+.HotelShillaList dl{padding-bottom: 40px;}
+.HotelShillaListCon ul{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;gap: 10px;width: 290px; margin: 0 auto;}
+.HotelShillaListCon ul li{display: flex;align-items: center;justify-content: center;width: 90px;height: 90px;background: #fff;font-size: 12px;letter-spacing: -0.4px;font-weight: bold;}
+.HotelShillaList dt, .Growth dt{line-height: 24px;}
+.Project{padding: 0 15px;}
+.Project dl{padding-bottom: 40px;}
+.ProjectCon ul{display: flex;justify-content: center;align-items: center;max-width: 290px;width: 100%;height: auto;margin: 0 auto;border-top: 1.3px solid rgb(234, 234, 234);border-bottom: 1.3px solid rgb(234, 234, 234);}
+.ProjectCon ul li{position: relative;margin: 26px 0;padding: 0 9px;font-weight: bold;}
+.ProjectCon ul li::after{content: '';position: absolute;top: 50%;transform: translateY(-50%);right: 0;width: 1.3px;height: 15px;background: rgb(234, 234, 234);}
+.ProjectCon ul li:nth-child(3):after{display: none;}
+.Growth{padding: 0 15px 40px;}
+.sub_tit{padding: 60px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
+.sub_txt{line-height: 22px;color: #222222;text-align: center;word-break: keep-all;}
+.sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
+.IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;margin: 0 15px;}
+.IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
+.IntroSwiper .swiper-pagination-current{color: #101010;}
+.IntroSwiper .swiper-pagination-total{color: #999;}
+/* .IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 15px;padding:0 15px;font-size: 15px;border: 0;} */
+/* .IntroSwiper .IntroWrap .Intro li:last-child{padding-right: 15px;} */
+/* .IntroSwiper .IntroWrap .Intro li{height: fit-content;width: fit-content !important;flex-shrink: 0;} */
+/* .IntroSwiper .IntroWrap .Intro li.on{border-bottom: 1px solid #222;} */
+/* .totalMenu .tabType1 ul li a{font-weight: normal;} */
+.IntroSwiper .IntroWrap .IntroTab{display: none;}
+.IntroSwiper .IntroWrap .IntroTab.on{display: block;}
+.IntroSwiper .swiper-button-prev{left: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
+.IntroSwiper .swiper-button-next{right: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
+.HotelDevelopWrap .Newclearfix{padding: 0 5% 100px;display: flex;justify-content: center;column-gap: 10px;}
+.Newclearfix:after{display: none;}
+.ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;}
+/* .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;} */
+/* .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;} */
+.totalMenu.scrollbar{padding: 0;overflow-x: scroll;overflow-y: hidden;border-bottom: 1px solid #e6e6e6;}
+.totalMenu.scrollbar::-webkit-scrollbar {display: none;}
+.totalMenu .tabType1{
+    height: fit-content;
+   display: block;
+}
+
+
+.totalMenu .tabType1 ul li.on a::after{background: transparent;}
+
+.snbSwiper {box-sizing: border-box;}
+.snbSwiper .swiper-slide { width: auto !important; }
+.snbSwiper .swiper-slide a { display: block; text-align: center; }
+.snbSwiper .swiper-slide .text { 
+    box-sizing: border-box; 
+    position: relative; 
+    display: inline-block; 
+    white-space: nowrap;
+    font-weight: normal;
+   }
+.snbSwiper .on .text { 
+    color: #222;
+    font-weight: bold;
+ }
+.snbSwiper .on .text:after { 
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 2.5px; 
+    background: #222; 
+}
+
+.totalMenu .tabType1 ul li{
+    padding-right: 17px;
+}
+.totalMenu .tabType1 ul li:first-child{
+    padding-left: 17px;
+}
