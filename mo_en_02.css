@@ -61,10 +61,7 @@
     height: fit-content;
    display: block;
 }
-
-
 .totalMenu .tabType1 ul li.on a::after{background: transparent;}
-
 .snbSwiper {box-sizing: border-box;}
 .snbSwiper .swiper-slide { width: auto !important; }
 .snbSwiper .swiper-slide a { display: block; text-align: center; }
