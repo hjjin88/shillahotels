@@ -6,9 +6,11 @@
 .HotelDevelopMap{width: 100%;background: #f7f7f7;}
 .OurBrands{padding: 0 15px 60px;}
 .OurBrands dl{padding-bottom: 40px;}
-.ShillaSwiper{padding: 30px 15px 60px;}
+.ShillaSwiper{padding: 15px 0 60px;}
 .ShillaSwiper-inner-01 dt, .ShillaSwiper-inner-02 dl:nth-of-type(1) dt{padding-bottom: 0;}
-.ShillaSwiper-inner-01{padding-bottom: 40px;}
+.ShillaSwiper-inner-01{padding: 0 15px 40px;}
+.ShillaSwiper-inner-02{padding: 0 15px;}
+.BrandGuidelines{padding: 0 15px;}
 .ShillaSwiper-inner-02 dl:nth-of-type(2){padding-bottom: 40px;}
 .ShillaSwiper-inner-02 dt:nth-of-type(2){padding-bottom: 20px;}
 .LocationsTable{width: 345px;margin: 0 auto;text-align: center;}
@@ -35,11 +37,12 @@
 .sub_tit{padding: 60px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
 .sub_txt{line-height: 22px;color: #222222;text-align: center;word-break: keep-all;}
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
-.IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;}
+.IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;margin: 0 15px;}
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
-.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 15px;font-size: 15px;border: 0;}
+.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 17px;padding: 0 17px;font-size: 15px;border: 0;}
+.IntroSwiper .IntroWrap .Intro li:last-child{padding-right: 0px;}
 .IntroSwiper .IntroWrap .Intro li{height: fit-content;width: fit-content !important;flex-shrink: 0;}
 .IntroSwiper .IntroWrap .Intro li.on{border-bottom: 1px solid #222;}
 .totalMenu .tabType1 ul li a{font-weight: normal;}
