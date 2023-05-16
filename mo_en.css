@@ -6,7 +6,7 @@
 .HotelDevelopMap{width: 100%;background: #f7f7f7;}
 .OurBrands{padding: 0 15px 30px;}
 .OurBrands dl{padding-bottom: 40px;}
-.ShillaSwiper{padding: 15px 0 30px;}
+.ShillaSwiper{position: relative;padding: 15px 0 30px;}
 .ShillaSwiper-inner-01 dt, .ShillaSwiper-inner-02 dl:nth-of-type(1) dt{padding-bottom: 0;}
 .ShillaSwiper-inner-01{padding: 0 15px 40px;}
 .ShillaSwiper-inner-02{padding: 0 15px;}
@@ -41,11 +41,6 @@
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
 .IntroSwiper .swiper-pagination-current{color: #101010;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
-.IntroSwiper .IntroWrap .Intro{display: flex;column-gap: 15px;padding:0 15px;font-size: 15px;border: 0;}
-.IntroSwiper .IntroWrap .Intro li:last-child{padding-right: 15px;}
-.IntroSwiper .IntroWrap .Intro li{height: fit-content;width: fit-content !important;flex-shrink: 0;}
-.IntroSwiper .IntroWrap .Intro li.on{border-bottom: 1px solid #222;}
-.totalMenu .tabType1 ul li a{font-weight: normal;}
 .IntroSwiper .IntroWrap .IntroTab{display: none;}
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
@@ -55,6 +50,10 @@
 .ctnMain .ctnMOffers{padding-bottom: 0;border-bottom: 0;}
 .ctnMain .ctnMOffers .tabType1.swiper-container{height: fit-content;padding-bottom: 0px;}
 .ctnMain .ctnMOffers .tabType1.swiper-container .swiper-slide{border:0;margin-bottom: 0;}
-.totalMenu.scrollbar{padding: 0;overflow-x: scroll;overflow-y: hidden;border-bottom: 1px solid #e6e6e6;}
-.totalMenu.scrollbar::-webkit-scrollbar {display: none;}
-.totalMenu .tabType1{height: fit-content;display: block;}
+.totalMenu .tabType1 ul::-webkit-scrollbar {display: none;}
+.totalMenu .tabType1 ul li a{font-weight: normal;}
+.totalMenu{border-bottom: 1px solid #e6e6e6;}
+.totalMenu .tabType1{width: 100%;height: 41px;box-sizing: border-box;}
+.totalMenu .tabType1 ul{height: 41px;padding: 0;display: flex;justify-content: flex-start;align-items: flex-start;width: auto;overflow-x: auto;overflow-y: hidden;border: 0;}
+.totalMenu .tabType1 ul li{display: inline-block;width: auto;padding-right: 17px;}
+.totalMenu .tabType1 ul li:first-child{padding-left: 17px;}

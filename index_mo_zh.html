@@ -2887,16 +2887,42 @@
 			<div class="ShillaSwiper">
 				<div class="IntroSwiper mo">
 					<div class="IntroWrap">
-                        <div class="totalMenu scrollbar">
+                        <div class="totalMenu">
                             <div class="tabType1">
-                                <ul class="Intro">
-                                    <li class="on" data-tab="swiper1"><a href="#none">新罗酒店</a></li>
-                                    <li data-tab="swiper2"><a href="#none">Shilla Monogram</a></li>
-                                    <li data-tab="swiper3"><a href="#none">新罗舒泰酒店</a></li>
-                                    <li data-tab="swiper4"><a href="#none">Midscale</a></li>
+                                <ul class="tab_cont">
+                                    <li class="tab_item on" data-slide-index="0"><a href="#" class="tap_link" data-tab="swiper1">新罗酒店</a></li>
+                                    <li class="tab_item" data-slide-index="1"><a href="#" class="tap_link" data-tab="swiper2">Shilla&nbsp;Monogram</a></li>
+                                    <li class="tab_item" data-slide-index="2"><a href="#" class="tap_link" data-tab="swiper3">新罗舒泰酒店</a></li>
+                                    <li class="tab_item" data-slide-index="3" style="pointer-events: none;"><a href="#" class="tap_link" data-tab="swiper4">Midscale</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <script>
+                            $(function() {
+                                $('.tab_cont .tab_item').click(function() {
+                                    var container = $('.tab_cont');
+                                    var tab = $(this);
+                                    var width = $(this).width();
+                                    var containerWidth = container.width();
+                                    var tabLeft = tab.position().left + tab.prev().position().left - 16;
+                                    var tabRight = tabLeft + tab.innerWidth() +  tab.next().innerWidth() + 16;
+                                    if (tabRight > containerWidth || tabLeft < 0) {
+                                        var scrollPosition = container.scrollLeft() + tabLeft;
+                                        container.animate({
+                                            scrollLeft: scrollPosition
+                                        }, 100);
+                                    }
+                                })
+                                $('.tap_link').click(function(e) {
+                                    e.preventDefault();
+                                    var activeTab = $(this).attr('data-tab');
+                                    $(this).parent().removeClass('on');
+                                    $('#' + activeTab).addClass('on');
+                                    $('#' + activeTab).siblings('.IntroTab').removeClass('on');
+                                    IntroTabContainer.swiper();
+                                })
+                            });
+                        </script>
 						<div id="swiper1" class="IntroTab on">
                             <div class="ShillaSwiper-inner-01">
                                 <dl>
@@ -3247,17 +3273,17 @@
 						</div>
 					</div>
                     <script>
-                    var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
-                        pagination: ".IntroTabContainer .swiper-pagination",
-                        paginationType: "fraction",
-                        nextButton: ".IntroTabContainer .swiper-button-next",
-                        prevButton: ".IntroTabContainer .swiper-button-prev",
-                        loop: true,
-                        slidesPerView : 1,
-                        observer: true,	
-                        observeParents: true,	
-                    });
-                    console.dir(imgCarouselSwiper);
+                        var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
+                            pagination: ".IntroTabContainer .swiper-pagination",
+                            paginationType: "fraction",
+                            nextButton: ".IntroTabContainer .swiper-button-next",
+                            prevButton: ".IntroTabContainer .swiper-button-prev",
+                            loop: true,
+                            slidesPerView : 1,
+                            observer: true,	
+                            observeParents: true,	
+                        });
+                        console.dir(imgCarouselSwiper);
 
                         // swiper
                         $(function() {
