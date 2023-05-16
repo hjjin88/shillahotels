@@ -2902,13 +2902,33 @@
                         </div>
                         <script>
                             $(function() {
+                                var IntroTabContainer = new Swiper('.IntroTabContainer', {
+                                    initialSlide : 0,
+                                    pagination: ".IntroTabContainer .swiper-pagination",
+                                    paginationType: "fraction",
+                                    nextButton: ".IntroTabContainer .swiper-button-next",
+                                    prevButton: ".IntroTabContainer .swiper-button-prev",
+                                    loop: true,
+                                    loopAdditionalSlides : 1,
+                                    slidesPerView : 1,
+                                    observer : true,
+                                    observeParents : true,
+                                });
                                 $('.tab_cont .tab_item').click(function() {
                                     var container = $('.tab_cont');
                                     var tab = $(this);
                                     var width = $(this).width();
                                     var containerWidth = container.width();
-                                    var tabLeft = tab.position().left + tab.prev().position().left - 16;
-                                    var tabRight = tabLeft + tab.innerWidth() +  tab.next().innerWidth() + 16;
+                                    if (tab.prev().length === 0){
+                                        var tabLeft = tab.position().left - 16;
+                                    }else{
+                                        var tabLeft = tab.position().left + tab.prev().position().left - 16;
+                                    }
+                                    if (tab.next().length === 0){
+                                        var tabRight = tabLeft + tab.innerWidth() + 16;
+                                    }else{
+                                        var tabRight = tabLeft + tab.innerWidth() +  tab.next().innerWidth() + 16;
+                                    }
                                     if (tabRight > containerWidth || tabLeft < 0) {
                                         var scrollPosition = container.scrollLeft() + tabLeft;
                                         container.animate({
@@ -2922,7 +2942,6 @@
                                     $(this).parent().removeClass('on');
                                     $('#' + activeTab).addClass('on');
                                     $('#' + activeTab).siblings('.IntroTab').removeClass('on');
-                                    IntroTabContainer.swiper();
                                 })
                             });
                         </script>
@@ -3294,29 +3313,6 @@
 						</div>
 					</div>
 				</div>
-				<script>
-                    var imgCarouselSwiper = new Swiper('.IntroTabContainer', {
-                        pagination: ".IntroTabContainer .swiper-pagination",
-                        paginationType: "fraction",
-                        nextButton: ".IntroTabContainer .swiper-button-next",
-                        prevButton: ".IntroTabContainer .swiper-button-prev",
-                        loop: true,
-                        slidesPerView : 1,
-                        observer: true,	
-                        observeParents: true,	
-                    });
-                    console.dir(imgCarouselSwiper);
-					// swiper
-					$(function() {
-						$('.IntroWrap ul.Intro li').click(function() {
-							var activeTab = $(this).attr('data-tab');
-							$('.IntroWrap ul.Intro li').removeClass('on');
-							$('.IntroTab').removeClass('on');
-							$(this).addClass('on');
-							$('#' + activeTab).addClass('on');
-						})
-					});
-				</script>
 			</div>
             <div class="gap"></div>
 			<div class="HotelShillaList">
