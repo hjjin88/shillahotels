@@ -2681,7 +2681,7 @@
     <!-- 컨텐츠 -->
 	<div class="HotelDevelop">
 		<div class="headTit">
-			<h2 class="tit">HOTEL DEVELOPMENT</h2>
+			<h2 class="tit">호텔 개발</h2>
 			<div class="btnBack"><a href="#" onclick="history.back(); return false;">뒤로</a></div>
 		</div>
 		<div class="HotelDevelopWrap">
@@ -2800,13 +2800,13 @@
 			<div class="ShillaSwiper">
 				<div class="IntroSwiper">
 					<div class="IntroWrap">
-                        <div class="totalMenu">
-                            <div class="tabType1">
-                                <ul class="tab_cont">
+                        <div class="IntrototalMenu">
+                            <div class="IntrotabType1">
+                                <ul class="Intro">
                                     <li class="tab_item on" data-slide-index="0"><a href="#" class="tap_link" data-tab="swiper1">신라호텔</a></li>
                                     <li class="tab_item" data-slide-index="1"><a href="#" class="tap_link" data-tab="swiper2">신라모노그램</a></li>
                                     <li class="tab_item" data-slide-index="2"><a href="#" class="tap_link" data-tab="swiper3">신라스테이</a></li>
-                                    <li class="tab_item" data-slide-index="3" style="pointer-events: none;"><a href="#" class="tap_link" data-tab="swiper4">Midscale</a></li>
+                                    <li class="tab_item" data-slide-index="3"><a href="#" class="tap_link" data-tab="swiper4">Midscale</a></li>
                                 </ul>
                             </div>
                             <script>
@@ -2823,8 +2823,8 @@
                                         observer : true,
                                         observeParents : true,
                                     });
-                                    $('.tab_cont .tab_item').click(function() {
-                                        var container = $('.tab_cont');
+                                    $('.Intro .tab_item').click(function() {
+                                        var container = $('.Intro');
                                         var tab = $(this);
                                         var width = $(this).width();
                                         var containerWidth = container.width();
@@ -2845,10 +2845,11 @@
                                             }, 100);
                                         }
                                     })
-                                    $('.tap_link').click(function(e) {
+                                    $('.Intro .tap_link').click(function(e) {
                                         e.preventDefault();
                                         var activeTab = $(this).attr('data-tab');
-                                        $(this).parent().removeClass('on');
+                                        $(this).parent().addClass('on');
+                                        $(this).parent().siblings().removeClass('on')
                                         $('#' + activeTab).addClass('on');
                                         $('#' + activeTab).siblings('.IntroTab').removeClass('on');
                                     })
@@ -2908,7 +2909,7 @@
                                     <table class="board_list">
                                         <caption>진출 대상 지역 테이블</caption>
                                         <colgroup>
-                                            <col>
+                                            <col >
                                             <col>
                                             <col>
                                             <col>

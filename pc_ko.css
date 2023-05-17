@@ -4,14 +4,14 @@
 .SubControl{position: relative;left: 50%;margin: 0 0 0 -960px;width: 1920px;}
 .HotelDevelopInfo, .OurBrands, .ShillaSwiper, .MapTab, .HotelShilla, .Project, .HotelDevelopBtn, .Growth, .HotelDevelopBtn{position: relative;width: 1200px;margin: auto;text-align: center;}
 /* 구간별 여백 정리 */
-.HotelDevelopInfo{padding: 100px 0 50px;}
+.HotelDevelopInfo{padding: 80px 0 50px;}
 .HotelDevelopInfo .Hospitality{padding-top: 100px;}
-.HotelDevelopInfo .Global{padding-top: 100px;}
+.HotelDevelopInfo .Global{padding-top: 80px;}
 .HotelDevelopMap{width: 100%;padding-top: 40px;background: #f7f7f7;}
-.OurBrands{padding: 100px 0;}
+.OurBrands{padding: 80px 0;}
 .ShillaSwiper-inner-01{padding: 100px 0 50px;}
-.ShillaSwiper-inner-02{padding: 100px 0;}
-.HotelShillaList{width: 100%;padding: 100px 0;background: #f1ead8;}
+.ShillaSwiper-inner-02{padding: 50px 0;}
+.HotelShillaList{width: 100%;padding: 80px 0;background: #f1ead8;}
 .Project{padding-top: 100px;}
 .Growth{padding: 100px 0;}
 /* contain */
