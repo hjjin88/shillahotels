@@ -2,7 +2,7 @@
 .contain.HotelDevelop{padding-top: 0;}
 .SubVisual{overflow: hidden;position: relative;height: 650px;}
 .SubControl{position: relative;left: 50%;margin: 0 0 0 -960px;width: 1920px;}
-.HotelDevelopInfo, .OurBrands, .ShillaSwiper, .MapTab, .HotelShilla, .Project, .HotelDevelopBtn, .Growth, .HotelDevelopBtn{position: relative;width: 1200px;margin: auto;text-align: center;}
+.HotelDevelopInfo, .OurBrands, .ShillaSwiper, .MapTab, .HotelShilla, .Project, .HotelDevelopBtn, .Growth, .HotelDevelopBtn{position: relative;margin:0 auto;text-align: center;}
 /* 구간별 여백 정리 */
 .HotelDevelopInfo{padding: 80px 0 50px;}
 .HotelDevelopInfo .Hospitality{padding-top: 100px;}
@@ -12,7 +12,7 @@
 .ShillaSwiper-inner-01{padding: 100px 0 50px;}
 .ShillaSwiper-inner-02{padding: 50px 0;}
 .HotelShillaList{width: 100%;padding: 80px 0;background: #f1ead8;}
-.Project{padding-top: 100px;}
+.Project{padding-top: 80px;}
 .Growth{padding: 100px 0;}
 /* contain */
 .MapTabs .MapTabsWrap{position: relative;}
