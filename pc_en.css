@@ -9,11 +9,11 @@
 .HotelDevelopInfo .Global{padding-top: 80px;}
 .HotelDevelopMap{width: 100%;padding-top: 40px;background: #f7f7f7;}
 .OurBrands{padding: 80px 0;}
-.ShillaSwiper-inner-01{padding: 100px 0 50px;}
+.ShillaSwiper-inner-01{padding: 80px 0 50px;}
 .ShillaSwiper-inner-02{padding: 50px 0;}
 .HotelShillaList{width: 100%;padding: 80px 0;background: #f1ead8;}
 .Project{padding-top: 80px;}
-.Growth{padding: 100px 0;}
+.Growth{padding: 80px 0;}
 /* contain */
 .MapTabs .MapTabsWrap{position: relative;}
 .MapTabs .Tabs, .Intro {overflow: hidden;position: absolute;display: flex;align-items: center;justify-content: center;list-style: none;width: 100%;z-index: 1;}
@@ -24,12 +24,12 @@
 .IntroBar{position: relative;top: 43px;z-index: 1;height: 1px;background: #e5e5e5;}
 .IntroWrap .Intro{position: relative;}
 .IntroWrap .Intro li a {display: flex;}
-.IntroSwiper .swiper-container{padding-bottom: 23px;}
+.IntroSwiper .swiper-container{width: 1200px;padding-bottom: 23px;}
 .IntroSwiper .swiper-pagination{bottom: 0;font-size: 15px;color: #999;text-align: right;}
 .IntroSwiper .swiper-pagination-current{color: #101010;font-weight: bold;}
 .IntroSwiper .swiper-pagination-total{color: #999;}
-.IntroSwiper .swiper-button-prev{top: 50%;left: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slidePrev.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
-.IntroSwiper .swiper-button-next{top: 50%;right: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 94px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slideNext.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;}
+.IntroSwiper .swiper-button-prev{top: 50%;left: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 65px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slidePrev.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;margin-top: -28px;}
+.IntroSwiper .swiper-button-next{top: 50%;right: 0px;transform: translateY(-50%);margin: 0;position: absolute;z-index: 10;width: 60px;height: 65px !important;background: url(https://www.shilla.net/images/ko/jeju/main/slideNext.png) no-repeat 0px 0px;text-indent: -9999%;overflow: hidden;margin-top: -26px;}
 /* button */
 .HotelDevelop .btnSet{display: flex;justify-content: center;height: unset;margin-bottom: 150px;}
 .HotelDevelop .btnSet li{width:unset;margin-right: 10px;}
@@ -45,5 +45,5 @@
 .foot .localBox .linkInfo .ContactInfo{width: 410px !important;}
 .foot .localBox .linkInfo .ContactInfo::after{content: '';width: 1px;height: 50px;background: #e8e3ce;position: absolute;top: 0;right: 0;}
 .foot .localBox .linkInfo .ContactInfo dd{width: 410px !important;}
-/* 이미지 히든 */
+/* 이미지 히든 텍스트 */
 .hidden{display: none;}
