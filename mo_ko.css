@@ -13,7 +13,7 @@
 .BrandGuidelines{padding: 0 15px;}
 /* .ShillaSwiper-inner-02 dl:nth-of-type(2){padding-bottom: 30px;} */
 .ShillaSwiper-inner-02 dt:nth-of-type(2){padding-bottom: 20px;}
-.LocationsTable{margin: 0 auto;padding-top: 30px;text-align: center;}
+.LocationsTable{margin: 0 auto;padding: 30px 15px 0;text-align: center;}
 .LocationsTable table{width: 100%;border-spacing: 0;}
 .LocationsTable img{width: 18px;}
 .LocationsTable .board_list thead tr{line-height: 22.45px;letter-spacing: -0.18px;color: rgb(119, 119, 119);border-bottom: 5.3px solid rgb(229, 229, 229);padding-bottom: 20px;}
@@ -21,7 +21,7 @@
 .LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-weight: 500;font-size: 12.5px;text-align: center;}
 .LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
 .LocationsTable .board_list tr.last th, .LocationsTable .board_list tr.last td{border-bottom: 3px solid rgb(229, 229, 229);}
-.BrandGuidelines > img {padding-top: 30px;}
+.BrandGuidelines > img {width: calc(100% - 15px);padding-top: 30px;}
 .HotelShillaList{padding: 0 15px 30px;background: rgb(241, 234, 215);}
 .HotelShillaList dl{padding-bottom: 40px;}
 .HotelShillaListCon {display:flex; gap:10px; align-items: center; justify-content: center; width: 100%;flex-wrap: wrap;}
@@ -54,6 +54,6 @@
 .IntrotabType1 .Intro{height: 41px;padding: 0;display: flex;justify-content: flex-start;align-items: flex-start;width: auto;overflow-x: auto;overflow-y: hidden;border: 0;}
 .IntrotabType1 .Intro li:first-child {padding-left: 17px;}
 .IntrotabType1 .Intro li {display: inline-block;width: auto;padding-right: 17px;}
-.IntrotabType1 .Intro li.on a {color: #222;font-weight: bold;}
-.IntrotabType1 .Intro li a {display: block;position: relative;font-weight: normal;line-height: 40px;font-size: 15px;font-weight: bold;text-align: center;color: #999;}
+.IntrotabType1 .Intro li.on a {color: #222;font-weight: bold !important;}
+.IntrotabType1 .Intro li a {display: block;position: relative;font-weight: normal !important;line-height: 40px;font-size: 15px;font-weight: bold;text-align: center;color: #999;}
 .IntrotabType1 .Intro li.on a::after{content: '';position: absolute;left: 0;bottom: -1px;width: 100%;height: 2px;background: #222;}
