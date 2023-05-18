@@ -7,9 +7,9 @@
 .OurBrands{padding: 0 15px 30px;}
 .OurBrands dl{padding-bottom: 30px;}
 .ShillaSwiper{position: relative;padding: 15px 0 30px;}
-.ShillaSwiper-inner-01 dt, .ShillaSwiper-inner-02 dl:nth-of-type(1) dt{padding-bottom: 0;}
+.ShillaSwiper-inner-01 dt, .ShillaSwiper-inner-02 .sub_tit.pb0 {padding-bottom: 0;}
 .ShillaSwiper-inner-01{padding: 0 15px 30px;}
-.ShillaSwiper-inner-02{padding: 0 15px;}
+.ShillaSwiper-inner-02 > dl {padding: 0 15px;}
 .BrandGuidelines{padding: 0 15px;}
 /* .ShillaSwiper-inner-02 dl:nth-of-type(2){padding-bottom: 30px;} */
 .ShillaSwiper-inner-02 dt:nth-of-type(2){padding-bottom: 20px;}
@@ -21,11 +21,12 @@
 .LocationsTable .board_list td, .LocationsTable .board_list th{width: 81px;border-bottom: 1px solid #ddd;word-break: keep-all;font-weight: 500;font-size: 12.5px;text-align: center;}
 .LocationsTable .board_list thead th{padding-bottom: 10px;border-bottom: 3px solid rgb(229, 229, 229);}
 .LocationsTable .board_list tr.last th, .LocationsTable .board_list tr.last td{border-bottom: 3px solid rgb(229, 229, 229);}
-.BrandGuidelines dl{padding-bottom: 40px;}
+.BrandGuidelines > img {padding-top: 30px;}
 .HotelShillaList{padding: 0 15px 30px;background: rgb(241, 234, 215);}
 .HotelShillaList dl{padding-bottom: 40px;}
-.HotelShillaListCon ul{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;gap: 10px;width: 290px; margin: 0 auto;}
-.HotelShillaListCon ul li{display: flex;align-items: center;justify-content: center;width: 90px;height: 90px;background: #fff;font-weight: bold;}
+.HotelShillaListCon {display:flex; gap:10px; align-items: center; justify-content: center; width: 100%;flex-wrap: wrap;}
+.HotelShillaListCon .square {position: relative; width: 30%; padding-bottom: 30%; background: #fff;} 
+.HotelShillaListCon .square .content {position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-weight: bold; margin: auto; height: 22px; text-align: center;}
 .HotelShillaList dt, .Growth dt{line-height: 24px;}
 .Project{padding: 0 15px;}
 .Project dl{padding-bottom: 30px;}
