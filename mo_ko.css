@@ -34,7 +34,7 @@
 .ProjectCon ul li{position: relative;margin: 26px 0;padding: 0 17px;font-weight: bold;}
 .ProjectCon ul li::after{content: '';position: absolute;top: 50%;transform: translateY(-50%);right: 0;width: 1.3px;height: 15px;background: rgb(234, 234, 234);}
 .ProjectCon ul li:nth-child(3):after{display: none;}
-.Growth{padding: 0 15px 40px;}
+.Growth{padding: 0 15px;}
 .sub_tit{padding: 30px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
 .sub_txt{line-height: 22px;color: #222222;text-align: center;word-break: keep-all;}
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
@@ -46,7 +46,7 @@
 .IntroSwiper .IntroWrap .IntroTab.on{display: block;}
 .IntroSwiper .swiper-button-prev{left: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_left_arrow.png) no-repeat;background-size: 30px 55px;}
 .IntroSwiper .swiper-button-next{right: 0;top: 40%;width: 30px;height: 55px !important;background: url(https://www.shilla.net/images/ko/jeju/main/gao_right_arrow.png) no-repeat;background-size: 30px 55px;}
-.HotelDevelopWrap .Newclearfix{padding: 0 5% 30px;display: flex;justify-content: center;column-gap: 10px;}
+.HotelDevelopWrap .Newclearfix{padding: 30px 5%;display: flex;justify-content: center;column-gap: 10px;}
 .Newclearfix:after{display: none;}
 .IntrototalMenu .IntrotabType1 .Intro::-webkit-scrollbar {display: none;}
 .IntrototalMenu{border-bottom: 1px solid #e6e6e6;}
