@@ -35,7 +35,7 @@
 .ProjectCon ul li:nth-child(3):after{display: none;}
 .Growth{padding: 0 15px;}
 .sub_tit{padding: 30px 0 15px;font-weight: bold;font-size: 15px;line-height: 22px;color: #222222;text-align: center;}
-.sub_txt{line-height: 22px;color: #222222;text-align: center;word-break: keep-all;}
+.sub_txt{line-height: 22px;color: #222222;text-align: center;}
 .sub_txt.desc{padding: 10px 0;color: rgb(153, 153, 153);}
 .IntroSwiper .IntroTabContainer.swiper-container{height: fit-content;padding-bottom: 30px;margin: 0 15px;}
 .IntroSwiper .swiper-pagination {bottom: 0;font-size: 14px;color: #999;line-height: 1;}
